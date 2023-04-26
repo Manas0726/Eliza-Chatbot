@@ -1,0 +1,36 @@
+ 
+{% include "adminHeader.html" %}
+
+<link rel="stylesheet" href="/static/CSS/add.css">
+
+<div class="addContainer">
+  <form id="myForm">
+    <label for="">Choose the Keyword:</label>
+    <select name="" id="coreKey">
+      <option selected disabled>Choose from here</option>
+    </select>
+    <br><br>
+    
+    <label for="">Available Keywords with Answers:</label>
+    <div id="jsonList"></div>
+    <br>
+    
+    <label for="">New Name for SubKeyword:</label>
+    <input type="text" placeholder="keyword" id="subKey"/>
+    <br><br>
+    
+    <label for="">Enter the Answer for SubKeyword:</label>
+    <br>
+    <textarea name="" id="textArea" cols="40" rows="5"></textarea>
+    <br><br>
+    <p id="result"></p>
+    <button class="submitButton" type="submit" id="submitB">Submit</button>
+  </form>
+</div>
+
+  <script src="/static/javascript/nameFetching.js"></script>
+
+  </body>
+
+
+</html>

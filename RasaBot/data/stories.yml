@@ -1,0 +1,106 @@
+version: "3.1"
+
+stories:
+
+- story: curse
+  steps: 
+  - intent: chutiya
+  - action: utter_chutiya
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Admission
+  steps:
+  - intent: admission_date
+  - action: utter_admission_date
+  - intent: admission_criteria
+  - action: utter_admission_criteria
+  - intent: admission_fees
+  - action: utter_admission_fees
+  - intent: admission_documents
+  - action: utter_admission_documents
+  - intent: admission_process
+  - action: utter_admission_process
+  - intent: admission_criteria
+  - action: utter_admission_criteria
+
+- story: library
+  steps:
+  - intent: library_card
+  - action: utter_library_card
+  - intent: library_time
+  - action: utter_library_time
+  - intent: library_book_reissue
+  - action: utter_library_book_reissue
+  - intent: library_book_duedate
+  - action: utter_library_book_duedate
+  - intent: library_borrow_period
+  - action: utter_library_borrow_period
+  - intent: library_book_lost
+  - action: utter_library_book_lost
+  - intent: library_more_book
+  - action: utter_library_more_book
+
+- story: hostel
+  steps:
+  - intent: hostel_admission
+  - action: utter_hostel_admission
+  - intent: hostel_admission_process
+  - action: utter_hostel_admission_process
+  - intent: hostel_fees
+  - action: utter_hostel_fees
+  - intent: hostel_time
+  - action: utter_hostel_time
+  - intent: hostel_services
+  - action: utter_hostel_services
+  - intent: hostel_visitor
+  - action: utter_hostel_visitor
+
+- story: scholarship
+  steps:
+  - intent: scholarship_criteria
+  - action: utter_scholarship_criteria
+  - intent: scholarship_process
+  - action: utter_scholarship_process
+  - intent: scholarship_documents
+  - action: utter_scholarship_documents
+
+- story: bus_pass
+  steps:
+  - intent: bus_pass
+  - action: utter_bus_pass
+
+- story: caste_validity
+  steps:
+  - intent: caste_validity_documents
+  - action: utter_caste_validity_documents
+  - intent: caste_validity_15A
+  - action: utter_caste_validity_15A
+
+  
+

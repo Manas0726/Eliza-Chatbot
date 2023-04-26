@@ -1,0 +1,6 @@
+{% include "adminHeader.html" %}
+
+{% if image_data %}
+<img src="data:image/png;base64,{{ image_data }}" alt="chart">
+{% else %}
+{% endif %}

@@ -1,0 +1,204 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - admission_date
+  - admission_fees
+  - admission_documents
+  - admission_process
+  - admission_criteria
+  - library_card
+  - library_time
+  - library_book_reissue
+  - library_book_duedate
+  - library_borrow_period
+  - library_book_lost
+  - library_more_book
+  - hostel_admission
+  - hostel_admission_process
+  - hostel_fees
+  - hostel_time
+  - hostel_services
+  - hostel_visitor
+  - scholarship_criteria
+  - scholarship_process
+  - scholarship_documents
+  - bus_pass
+  - caste_validity_documents
+  - caste_validity_15A
+  - chutiya
+
+responses:
+
+  utter_chutiya:
+  - text: "Tu chutiya"
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_admission_date:
+  - text: "The admission process for Government Polytechnic Nagpur generally starts in the months of June, July, or August. For more information related to the admission process and important dates, you can refer to the following websites: 'https://dte.maharashtra.gov.in/' and 'https://www.gpnagpur.ac.in/gpnagpur_new/'."
+
+  utter_admission_fees:
+  - text: " *The admission fees for every year vary depending on the category. For OPEN category, it is 7750, for OBC/Ews it is 4750, and for SC/ST/VJNT/SBC it is 1750. Please note that exam fees are exempted from the annual fee. Additionally, for every semester, you are required to pay the course registration fees and exam fees." 
+
+  utter_admission_documents:
+  - text: "1. Caste/Tribe Certificate
+           2. Non-Creamy Layer Certificate (Valid till 31st March 2023)
+           3. Domicile Certificate
+           4. Income Certificate
+           5. EWS Certificate
+           6. Person with Disability
+           7. Aadhar Card or Bank Account
+           8. T.C. (10th/12th/Other Qualification)
+           9. Marksheet (10th/12th/ITI)
+           10. Defence Certificate (If any Family Member in Defence)
+           11. A signed copy of the Online filled Application form
+           https://www.gpnagpur.ac.in/gpnagpur_new/ "
+
+
+  utter_admission_process:
+  - text: "  Government Polytechnic Nagpur Admission  is conducted by DTE based on the marks obtained 
+             by candidates in their qualifying(10th/12th/ITI) exams. The admission process is based on merit,
+             and candidates are selected through a merit list and counseling process. Government Polytechnic Nagpur
+             is a three-year engineering diploma course, and there is no entrance examination for admission.
+             The application process is conducted online through the official website(DTE maharashtra  websites:    
+            'https://dte.maharashtra.gov.in/'), 
+             and candidates who have passed 10th/12th/ITI  with a minimum score of 35% and domicile 
+             in Maharashtra are eligible to apply." 
+
+
+  utter_admission_criteria:
+  - text: "Admission to diploma courses at Government Polytechnic Nagpur is based on the merit list, and candidates 
+          who have passed their 10th, 12th, or ITI exams are eligible to apply. The duration of the diploma course is 
+         three years after 10th, while it is two years after 12th or equivalent."
+ 
+
+  utter_library_card:
+  - text: "For accessing library books, you need to apply for a library card. This can be done by filling out a   
+    Google form provided by the CR or librarian. After a waiting period of 15-17 days, you can collect the card from 
+     the cooperative store by paying a fee of Rs. 50 (fees may vary).You don't need any documents to apply for a 
+      library card." 
+
+
+  utter_library_time:
+  - text: " The opening hours are from 11 am to 5 pm from Monday to Saturday. There is a lunch break from 2-3 pm."
+
+
+
+  utter_library_book_reissue:
+  - text: " Yes, that is correct. You can re-issue an already borrowed book by extending the due date period of the book. However, if you do not want to extend the due date period, you can return the book.For every library transaction, you must have a library card "
+
+
+  utter_library_book_duedate:
+  - text:  "The due date for returning a book is 15 days including the day when you borrow it. If you fail to return a book by the due date, you will be fined Rs. 1 per day until the return date."
+
+
+  utter_library_borrow_period:
+  - text: "The due date for returning a book is 15 days, including the day when you borrow it. If you wish to extend the due date, you can re-issue the book. However, if you fail to return the book by the due date, a fine of Rs. 1 per day will be charged until the date of return."
+
+
+  utter_library_book_lost:
+  - text: " In the event of losing a library book, promptly contact the library and explain the situation. You may be required to pay for the book or find a replacement, along with possible late fees. Honesty and taking responsibility are essential, and it's best to ensure timely and careful return of borrowed items to avoid such incidents in the future."
+
+  utter_library_more_book:
+  - text: " it will updated soon"
+
+
+  utter_hostel_admission:
+  - text: " The minimum time required for admission is one month. Any student from the college can be admitted according to the merit list, but direct second-year students are not allowed. "
+
+
+  utter_hostel_admission_process:
+  - text:  "The hostel admission process begins after the first round of the admission process. The process for applying for a hostel is as follows:
+            Firstly, you need to fill the hostel admission form provided by the hostel.
+            Next, you need to attach the following required documents with the application form:
+            a) Caste/Tribe Certificate
+            b) CAP (Centralized Admission Process) Allotment Letter
+            c) Passport size photo
+            d) Income Certificate
+            e) EWS Certificate
+            f) Person with Disability Certificate
+            g) Aadhar Card or Bank Account
+            h) T.C. (10th/12th/Other Qualification)
+            i) Marksheet (10th/12th)
+            j) Defence Certificate (If any Family Member in Defence)
+            The list of successful applicants will be displayed based on their previous class percentage and category criteria." 
+
+  utter_hostel_fees:
+  - text: "The hostel fees in total for one year are 20700, but the amount may vary each year. The hostel fee structure is as follows: The fee for a hostel room is 2700 rupees, and the fee for mess facility is 18000 rupees."
+
+
+  utter_hostel_time:
+  - text: "The hostel opens at 6am in the morning and closes at 10pm at night. However, there is a log book that the hostellers need to fill every day as per hostel regulations. The meal timings are as follows: "
+
+
+  utter_hostel_services:
+  - text: " it will updated soon "
+
+
+  utter_hostel_visitor:
+  - text: " it will updated soon "
+
+  utter_scholarship_criteria:
+  - text: " Polytechnic students who meet the eligibility criteria can apply for scholarships. The eligibility criteria may vary depending on the specific scholarship program. Typically, the criteria consider factors such as family income and category of the student (such as SC/ST/OBC/EWS). Students should check with their respective institute or Mahadbt for information about available scholarships and their eligibility criteria.
+LINK : https://mahadbt.maharashtra.gov.in/RegistrationLogin/RegistrationLogin)"
+
+  utter_scholarship_process:
+  - text: " To apply for a scholarship, you need to check the eligibility criteria, gather the required documents, and fill out the application form. The application process may vary depending on the specific scholarship program.For more information on scholarships and the application process, students can refer to the MahaDBT portal at ' https://mahadbt.maharashtra.gov.in/. ' "
+
+  utter_scholarship_documents:
+  - text: "Cast,Income,Domicile,Allotment letter,Addmission fee recipt,Bank pass book zerox,Aadhar card zerox,SSC/HSC marksheet,Previous year marksheet,Declaration,Gap,Ration card zerox. For more information on scholarships and the application process, students can refer to the MahaDBT portal at ' https://mahadbt.maharashtra.gov.in/. ' "
+
+  utter_bus_pass:
+  - text: "Get a bus pass form from the bus depot/office and fill it.
+Write an application for a bus pass and attach a bonafide certificate.
+Get a signature and stamp from your class teacher and head of department.
+Submit the form to the bus depot/office."
+
+  utter_caste_validity_documents:
+  - text: "   १) Online भरलेला अर्ज
+
+2) Form 15A
+
+३) Allotment Letter / Bonafide Certificate
+
+४) Upload केलेले Documents Xerox
+
+(५) Online भरलेला अर्ज व Upload केलेले Document ची Xerox अर्जासोबत जोडणून २ प्रतित विद्यार्थी विभगात सादर करणे
+
+(६) एका अर्जासोबत २ Original Affidavit जोडणे."
+
+  utter_caste_validity_15A:
+  - text:   "First, apply for caste validity and when uploading the Form-15A document, you need to upload a bonafide and CAP certificate In place of 15a form . Then, submit the online application form with all uploaded documents and a handwritten application to the principal to obtain the Form-15A." 
+
+ 
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat here</title>
+  <link rel="stylesheet" href="Chat.css" />
+  <link rel="stylesheet" href="/static/CSS/messageLoader.css" />
+  <link rel="icon" href="/static/images/logo-figma.png" />
+  <link rel="stylesheet" href="/static/CSS/font.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+  <!-- chat area whole block -->
+  <div class="wrapper">
+    <!-- chat area -->
+    <section class="chat-area">
+      <header>
+        <img id="logoImg" src="/static/images/logo-figma.png" alt="" />
+        <div class="details">
+          <span>ChatBot</span>
+          <p>Active Now</p>
+        </div>
+      </header>
+
+      <!-- chatbox bot and user -->
+
+      <div class="chat-box" id="chat_">
+        <!-- bot message -->
+        <div class="chat incoming">
+          <img class="botImg" src="/static/images/logo-figma.png" alt="" />
+          <div class="details">
+            <!-- <p id="bot-hello-msg">Hey How can i help you?</p> -->
+            <!-- <p class="load">
+              <span class="loader_bar">
+              </span></p> -->
+            <p class="load">
+              <span class="loader-bar-2"></span>
+              <span class="loader-bar-2"></span>
+              <span class="loader-bar-2"></span>
+                
+           </span></p>
+          </div>
+        </div>
+      </div>
+      <!-- this script is for the buttons -->
+
+      <div class="msg-quick-reply">
+        <div class="btn-wrap">
+          <button class="btn-quick-reply" id="Admission">Admission</button>
+          <button class="btn-quick-reply" id="Hostel">Hostel</button>
+          <button class="btn-quick-reply" id="Scholarship">
+            Scholarship
+          </button>
+          <button class="btn-quick-reply" id="Library">Library</button>
+          <button class="btn-quick-reply" id="Courses">Courses</button>
+        </div>
+      </div>
+      <form action="#" class="typing-area">
+        <span class="inputico">
+          <i class="tgico-smile"></i>
+        </span>
+        <input id="textInput" type="text" name="message" class="input-field" placeholder="Type a message here..."
+          autocomplete="off" />
+        <span class="micIcoOff" id="mic">
+          <i class="tgico-gc_microphoneoff"></i> 
+        </span>
+        <span class="micIco" id="micOn">
+          <i class="tgico-gc_microphone" id="offmic"></i>
+        </span>
+        <button id="sendMsg"><i class="tgico-send"></i></button>
+      </form>
+      
+    </section>
+  </div>
+  <script src="/static/javascript/updatedchatting.js"></script>
+  <script src="/static/javascript/userTextMsg.js"></script>
+  <script src="voicetotext.js"></script>
+</body>
+
+</html>

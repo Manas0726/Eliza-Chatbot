@@ -1,0 +1,126 @@
+{% include "adminHeader.html" %}
+
+
+    <style>
+  
+      form {
+          max-width: 500px;
+          margin: 0 auto;
+          background-color: #fff;
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+      
+      /* h1 {
+          font-size: 24px;
+          margin-bottom: 20px;
+          text-align: center;
+          color: #333;
+      }  */
+       
+      label {
+          display: block;
+          margin-bottom: 10px;
+          font-size: 16px;
+          color: #333;
+      }
+      
+      select, input[type="text"], textarea {
+          width: 100%;
+          padding: 10px;
+          font-size: 16px;
+          border: none;
+          border-radius: 5px;
+          margin-bottom: 20px;
+          box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      }
+      
+      #jsonList {
+        padding: 10px 10px;
+        background-color: #d5e3e3;
+        border: solid 1px;
+        border-radius: 9px;
+      }
+      select {
+          appearance: none;
+          -webkit-appearance: none;
+          background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-512.png') no-repeat right center;
+          background-size: 20px 20px;
+      }
+      
+      textarea {
+          resize: vertical;
+      }
+      
+      .submitButton {
+          background-color: #4CAF50;
+          color: #fff;
+          font-size: 16px;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+      }
+      
+      .submitButton:hover {
+          background-color: #3e8e41;
+      }
+    </style>
+    
+    <div class="deleteContainer">
+      <form>
+        <label for="">Choose the Keyword:</label>
+        <select name="" id="coreKey">
+          <option selected disabled>Choose from here</option>
+        </select>
+        <br>
+
+        
+        <label for="">Available Keywords with Answers:</label>
+        <div id="jsonList"></div>
+        <br>
+        <label for="">Choose the SubKeyword:</label>
+        <select name="" id="subKey">
+          <option selected disabled>Choose from here</option>
+        </select><br>
+        
+        <br>
+
+        <p id="result"></p>
+        <button class="submitButton" type="submit" id="submitB" onclick="inputDelete(event)">Delete</button>
+      </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+<script src="/static/javascript/deletePage.js"></script>
+  </body>
+</html>

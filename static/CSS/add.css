@@ -1,0 +1,235 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "EUCLID CIRCULAR B";
+}
+
+body {
+	overflow: hidden;
+	background-color: #afaeae;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	text-align: center;
+	justify-content: center;
+}
+
+/* h1 {
+	color: white;
+	font-weight: 500;
+	font-size: 30px;
+	margin-left: 10px;
+} */
+
+.ulList {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.liList {
+	position: relative;
+}
+
+.liList a {
+	color: white;
+	text-decoration: none;
+	margin: 30px;
+	transition: ease 0.3s;
+}
+
+.liList a:hover {
+	color: aqua;
+}
+
+
+.navBar {
+	background-color: #1a1a1a;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 10px;
+}
+
+.containerImg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 27px;
+	/* Set a height for the container */
+	margin-right: 10px;
+}
+
+.userImg {
+	width: 40px;
+	margin-right: 10px;
+}
+
+button {
+	padding: 5px 10px;
+	margin-right: 10px;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	transition: ease 0.3s;
+}
+
+button:hover {
+	background-color: #afaeae;
+}
+/* dropdown menu style */
+.dropdown-menu {
+	display: none;
+  }
+  .navBar .ulList .liList:hover .dropdown-menu {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background-color: #333;
+  }
+  .navBar .ulList li:hover .dropdown-menu ul {
+	display: block;
+	margin: 10px;
+  }
+  .navBar ul li:hover .dropdown-menu ul li {
+	width: 150px;
+	padding: 10px;
+  }
+  .dropdown-menu-1 {
+	display: none;
+  }
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+	display: block;
+	position: absolute;
+	width: 200px;
+	left: 195px;
+	top:50px;
+	background-color: #333;
+  }
+
+  .addContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+.submitButton {
+	margin-left: 204px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form {
+	max-width: 500px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+/* 
+h1 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #333;
+}  */
+ 
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #333;
+}
+
+select, input[type="text"], textarea {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#jsonList {
+  padding: 10px 10px;
+  background-color: #d5e3e3;
+  border: solid 1px;
+  border-radius: 9px;
+}
+select {
+	appearance: none;
+	-webkit-appearance: none;
+	background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-512.png') no-repeat right center;
+	background-size: 20px 20px;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.submitButton {
+	background-color: #4CAF50;
+	color: #fff;
+	font-size: 16px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+	background-color: #3e8e41;
+}

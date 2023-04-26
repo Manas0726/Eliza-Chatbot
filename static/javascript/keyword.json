@@ -1,0 +1,38 @@
+{
+  "Admission": {
+      "How to enroll": "Admission to Government Polytechnic Nagpur is based on merit, determined by candidates' marks in their 10th/12th/ITI exams. There is no entrance exam, and applications are accepted online through the official website <a href='//dte.maharashtra.gov.in/' target='_blank'>dte.maharashtra.gov.in</a>. Eligibility requires a minimum score of 35% in 10th/12th/ITI and domicile in Maharashtra",
+      "Start time": "The admission process for Government Polytechnic Nagpur generally starts in the months of June/ July/ August after 10th/12th/ITI results are out. For more information related to the admission process and important dates you can refer to the following websites: <a href='//dte.maharashtra.gov.in/' target='_blank'>dte.maharashtra.gov.in</a> and <a href='//www.gpnagpur.ac.in/gpnagpur_new/' target='_blank'>www.gpnagpur.ac.in</a>",
+      "Fees": "Fees: OPEN=7750 , OBC/Ews=4750, SC/ST/VJNT/SBC=1750   (per year fee exam fees are exempted)",
+      "Documents Required": "Required Documents are:  Caste/Tribe Certificate, Non-Creamy Layer Certificate (Valid till 31st March 2023), Domicile Certificate, Income Certificate, EWS Certificate, Person with Disability, Aadhar Card or Bank Account, T.C. (10th/12th/Other Qualification), Marksheet (10th/12th/ITI), Defence Certificate (If any Family Member in Defence), A signed copy of the Online filled Application form",
+      "Departments": "Departments: COMPUTER ENGINEERING, AIML ENGINEERING, CIVIL ENGINEERING, MECHANICAL ENGINEERING, ELECTRICAL ENGINEERING, ELECTRONICS & TELECOMMUNICATION ENGINEERING, INFORMATION TECHNOLOGY ENGINEERING, PACKAGING TECHNOLOGY, METALLURGICAL ENGINEERING, TEXTILE MANUFACTURE, MINING & MINE SURVEYING, AUTOMOBILE ENGINEERING, TRAVEL & TOURISM, MECHATRONICS ENGINEERING"
+    },
+    "Hostel": {
+      "How to enroll": "The hostel admission process begins after the first round of the admission process. The process for applying for a hostel is as follows: Firstly you need to fill the hostel admission form provided by the hostel, Next you need to attach required documents with the application form, The list of successful applicants will be displayed based on their previous class percentage and category criteria.",
+      "Reqiured Documents":"The following documents reqiured are : Caste/Tribe Certificate, CAP (Centralized Admission Process) Allotment Letter, Passport size photo, Income Certificate, EWS Certificate, Person with Disability Certificate, Aadhar Card or Bank Account photocopy, T.C. (10th/12th/Other Qualification), Marksheet (10th/12th), Defence Certificate (If any Family Member in Defence) .",
+      "Fees": "The hostel fees in total for one year are 20700, but the amount may vary each year. The hostel fee structure is as follows: The fee for a hostel room is 2700 rupees, and the fee for mess facility is 18000 rupees.",
+      "Facilites": "Services provided by the Hostel (Boys): Total number of rooms: 90, Total number of beds: 180, Water filter, Sports gym hall, Electric geyser, Doctor room, Mess hall, Solar water heater, Common room, Playground",
+      "Visitor Policy": "The policy for hostel visitors is as follows:  Only parents/guardians with a proper application that needs to be submitted to the warden can meet their ward in the hostel, The hostel provides a guest room for visitors but you need to submit an application and pay Rs. 50 for the room, The hostel also provides food facilities for visitors but you need to pay Rs. 50 for the same, Visitors can avail both of the above facilities by paying Rs. 100 and submitting an application to the warden.",
+      "Timings":"The hostel opens at 6am and closes at 9pm. However, hostelites are required to record their attendance daily in a log book, as well as in the biometric system in accordance with hostel regulations. The meal timings are as follows:",
+      "Accommodation Schedule":"The Hostel and Mess Services are operational throughout the year, with the exception of a few days after each semester examination."
+    },
+    "Scholarship": {
+      "Eligibility": "Eligibility for the Scholarship includes individuals belonging to reserved categories as well as open category candidates whose annual income is less than Rs. 8,00,000.",
+      "Process":"To apply for a scholarship, you need to check the eligibility criteria gather the required documents and fill out the application form. The application process may vary depending on the specific scholarship program.For more information on scholarships and the application process, students can refer to the MahaDBT portal at <a href='//mahadbt.maharashtra.gov.in/' target='_blank'>mahadbt.maharashtra.gov.in</a>",
+      "Document Requirement": "Documents reqiured: Cast certificate, Income certificate, Domicile certificate, Allotment letter, Admission fee receipt, Bank passbook photocopy, Aadhar card photocopy, SSC/HSC marksheet, Previous year's marksheet, Declaration form, CAP (Centralized Admission Process) Allotment Letter, Ration card photocopy. For more information on scholarships and the application process, students can refer to the MahaDBT portal at <a href='//mahadbt.maharashtra.gov.in/' target='_blank'>mahadbt.maharashtra.gov.in</a>",
+      "Status":"Go to the website <a href='//mahadbt.maharashtra.gov.in/' target='_blank'>mahadbt.maharashtra.gov.in</a> login, and under the 'My Applied Scheme' section, check the status of your applied scheme"
+    },
+    "Library": {
+      "Card":"For accessing library books, you need to apply for a library card. This can be done by filling out a form provided by the CR or librarian. After a waiting period of 15-17 days, you can collect the card from the cooperative store by paying a fee of Rs. 50 (fees may vary).You don't need any documents to apply for a library card.",
+      "Timing": "The opening hours are from 11 am to 5 pm from Monday to Saturday. There is a lunch break from 2-3 pm.",
+      "Re-issue": "Yes, You can re-issue an already borrowed book by extending the due date period of the book.",
+      "Book Borrow Period": "The borrowing period is 17 days, inclusive of the day of initial checkout.",
+      "Book Lost":"In the event of losing a library book, promptly contact the library and explain the situation. You may be required to pay for the book or find a replacement along with possible late fees. Honesty and taking responsibility are essential and it's best to ensure timely and careful return of borrowed items to avoid such incidents in the future."
+    },
+    "Committee": { 
+      "List of Committee's": "Committee's are as follows: Gymkhana Committee, Cultural Committee, ISTE Committee, IEi Committee, Srujan Club, Flim Club, AICTE Committee, Magazine Committee, Women's Wing, Several different departmental committee's",
+      "Membership acquisition":"To become a member of a committee: Identify the committee you are interested in joining, Register your interest, Attend an interview, Await the decision, Receive the post.",
+      "Post Time Period":"It is common practice for committees to be reformed after every academic year by the faculty incharge of the committee.Committee members can reapply for their positions acoording to their choice.",
+      "Eligibility":"To be eligible to join any of the core committees, you need to be a candidate of 2nd or 3rd year. This is to ensure that you have gained some experience and familiarity with the organization or community before taking on leadership or decision-making responsibilities within the committee."
+    }
+  }
+  

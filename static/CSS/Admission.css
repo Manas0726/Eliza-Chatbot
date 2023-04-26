@@ -1,0 +1,11 @@
+.container {
+    /* set container properties */
+    display: flex; /* optional: use flexbox to center vertically */
+    justify-content: center; /* optional: use flexbox to center vertically */
+  }
+  
+  .centered-div {
+    /* set div properties */
+    margin: 50px auto; /* center horizontally */
+  }
+  

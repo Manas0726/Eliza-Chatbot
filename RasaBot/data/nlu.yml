@@ -1,0 +1,338 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: chutiya
+  examples: |
+    - Bsdk
+    - porn
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: admission_date
+  examples: |
+    - College admission start date?
+    - When does admission process begin?
+    - Can you tell me when admission starts?
+    - Where can I find info on admission start date?
+    - Start date for the new admission session?
+   
+- intent: admission_fees
+  examples: |
+    - How much do I need to pay for admission fees at GPN?
+    - Can you provide information about the admission fees for GPN?
+    - What is the fee structure for admission to GPN?
+    - What are the enrollment fees for GPN?
+    
+- intent: admission_documents
+  examples: |
+    - what are the admisssion Documents for First Year ?
+    - What are the admission requirements for polytechnic ?
+    - Can you tell me the required documents for admission to the first year?
+    - What are the documents I need to submit for direct 2nd year admission to a polytechnic?
+    - What documents are required for direct 2nd year admission to a polytechnic?
+
+- intent: admission_process
+  examples: |
+    - How to get into a college?
+    - Admission process explained?
+    - What are the steps for college admission?
+    - What's involved in college admission?
+    - College admission steps?
+    - How do I apply for college?
+    - How to enroll in college?
+    - What's the college application procedure?
+
+- intent: admission_criteria
+  examples: |
+    - Who can take admission ?
+    - What are the eligibility criteria for admission to a polytechnic college?
+    - What are the admission requirements for the institution?
+
+- intent: library_card
+  examples: |
+    - How do I obtain a library card?
+    - What is the process for getting a library card?
+    - What is required to get a library card from your library?
+    - Where do I go to get a library card and what documents do I need ?
+
+- intent: library_time
+  examples: |
+    - What are the library hours ?
+    - When does the library open/close ?
+    - When is the library open?
+    - What is the schedule for the library ?
+    - Can you tell me at what time library open and closes ?
+
+- intent: library_book_reissue
+  examples: |
+    - Can a book be reissued ?
+    - Can I renew a book that I've already borrowed ?
+    - Can I extend the book borrowing period ?
+    - How can i return a book ?
+    - Is it possible to reissue a book ?
+
+
+- intent: library_book_duedate
+  examples: |
+    - Will I be fined if I return book after the due date?
+    - Are there any penalties for returning book late?
+    - If I don't return my book by the due date, will I be charged a fee or fine or penalty or charge ?
+    - What happens if I keep my checked-out book past the due date?
+    - What is the library's policy on late returns? Will I be penalized for returning book after the due date?
+
+- intent: library_borrow_period
+  examples: |
+    - How long can I keep a library book ?
+    - What's the book borrowing time ?
+    - How many days can I keep a library book ?
+    - Is there a time limit for borrowing books ?
+    - What's the maximum duration for borrowing books from the library ?
+
+- intent: library_book_lost
+  examples: |
+    - What if I lost a library book?
+    - What's the process for reporting a lost library book?
+    - How much will it cost me if I lost a library book?
+    - What are the consequences of losing a library book?
+
+- intent: library_more_book
+  examples: |
+    - Can I take out more than one book from the library at a time?
+    - Multiple books allowed?
+    - Borrow more than one?
+    - Limit on book loans?
+    - More than one book borrowable?
+    - Maximum books borrowed?
+    - Allowed to borrow multiple books?
+
+- intent: hostel_admission
+  examples: |
+    - How can i take admission at hostel?
+    - What are the eligibility criteria for hostel admission?
+    - How long does it take to get admission to the hostel?
+    - How can I contact the hostel admission office?
+    
+- intent: hostel_admission_process
+  examples: |    
+    - What is the hostel admission process?
+    - How to apply for hostel admission?
+    - What documents are needed for hostel admission?
+    - What is the process for applying to stay in the hostel?
+    - What are the required documents for admission at hostel?
+    - What is the deadline for hostel admission application?
+    - Is there a waiting list for hostel accommodation?
+    - How long does it take to get admission to the hostel?
+
+- intent: hostel_fees
+  examples: |
+    - What are the fees for staying in the hostel and how can I pay them?
+    - What is the fees/rent for hostel room and mess ?
+
+- intent: hostel_time
+  examples: |
+    - What are the check-in and check-out times for the hostel?
+    - Are there any restrictions on entering or leaving the hostel?
+    - Are there any restrictions on staying out late?
+    - Are there any specific timings for meals in the hostel?
+
+- intent: hostel_services
+  examples: |
+    - What amenities and services are provided in the hostel?
+    - What facilities are provided in the hostel rooms?
+    - What kind of kitchen facilities are available in the student hostel?
+    - Is there a playground in the student hostel?
+
+- intent: hostel_visitor
+  examples: |
+    - What is the policy for visitors to the hostel?
+    - Are visitors allowed in the hostel?
+    - What is the maximum number of visitors allowed in the hostel room?
+    - What are the visitor hours in the hostel?
+    - Do visitors need to sign in at the hostel reception or security desk?
+    - What kind of identification is required for visitors to the hostel?
+    - Are there any restrictions on visitors during certain times?
+  
+- intent: scholarship_criteria
+  examples: |
+    - What types of financial aid and scholarships are available to students, and how can they apply?
+    - Who is eligible for polytechnic scholarships?
+    - What are the eligibility criteria for scholarships related to polytechnic education?
+    - Which students can apply for scholarships for polytechnic studies?
+    - What is the opportunity for scholarship?
+
+- intent: scholarship_process
+  examples: |
+    - How to apply for scholarships?
+    - What are the steps to apply for a scholarship?
+    - Can you guide me on how to apply for scholarships?
+    - What is the process for applying for a scholarship?
+    - Is there a specific procedure for applying for scholarships?
+    - What do I need to do to apply for a scholarship?
+  
+- intent: scholarship_documents
+  examples: |
+    - What documents do I need to submit to apply for a scholarship?
+    - Could you please tell me what documents are required to apply for a scholarship?
+    - What kind of documents do I have to provide for a scholarship application?
+    - Is there a specific list of documents that I need to submit to apply for a scholarship?
+    - Are there any common documents that I need to submit to apply for most scholarships?
+    - Are there any mandatory documents that I need to provide for scholarship applications?
+
+- intent: bus_pass
+  examples: |
+    - What is the process to apply for a bus pass?
+    - Can you guide me on how to obtain a bus pass?
+    - What are the steps to get a bus pass?
+    - Is there a specific procedure to apply for or obtain a bus pass?
+    - How do I go about applying for a bus pass?
+
+- intent: caste_validity_documents
+  examples: |
+    - what are the documents reqiured for Caste Validity Certificte?
+    - Can you tell me the required documents for Caste Validity Certificte process ?
+    - What are the documents needed for Caste Validity Certificte ?
+    - What is the importance of Caste Validity Certificte ?
+    - Why do i need to make Caste Validity Certificte ?
+
+- intent: caste_validity_15A
+  examples: |
+    - What is the process to get a 15A form from my college?
+    - Can you guide me on how to obtain a 15A form from my college?
+    - Where can I collect a 15A form from my college?
+    - Is there a specific office or department in my college from where I can obtain a 15A form?
+    - Do I need to submit any documents to obtain a 15A form from my college?
+    - how to get Form-15A  Certificate to be given by Principal of the School/College   
+
+- intent: college_history
+  examples: |
+    - What is the history of the institution?
+    - How old is the institute?
+
+- intent: college_mission_vision
+  examples: |
+    - Who founded the institution, and what was their vision for it?
+    - What is the vision and mission of the institution?
+    - How does the institution define its mission?
+    - What are the core values of the institution?
+    - What is the purpose of the institution?
+    - What is the program outcomes of the college?
+
+- intent: college_course
+  examples: |
+    - Can you describe the academic programs/branches and degrees offered by the institution/college?
+    - What are the academic departments within the institution?
+    - Can you provide a list of the undergraduate programs offered by the institution?
+    - What is the enrollment capacity for each academic program, and how many students are currently enrolled in each program?
+    - What is the average class size for undergraduate and graduate courses within the academic programs?
+
+- intent: college_achievements
+  examples: |
+    - What are some notable achievements or accomplishments of the institution and its faculty members?
+    - What significant events or milestones have occurred in the institution's history?
+    - What notable alumni have graduated from the institution and made a significant impact in their fields?
+
+- intent: college_facilities
+  examples: |
+    - Can you describe the campus facilities and resources available to students, such as libraries, labs, and recreational centers?
+    - What is the size of the campus, and what types of buildings are located there?
+    - Can you tell me the total number of acres on which the institution is spread?
+
+
+
+
+- intent: college_commities
+  examples: |
+    - Are there any student organizations or clubs available on campus, and how can students get involved?
+    - What opportunities are available for students to participate in community service or volunteer work?
+     
+
+
+- intent: college_curriculum
+  examples: |
+    - Can you describe the curriculum for a specific program offered by the institution?

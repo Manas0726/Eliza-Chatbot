@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/CSS/Hero.css" />
+    <link rel="icon" href="/static/images/logo-figma.png" />
+    <script src="/static/javascript/color.js"></script>
+    <title>Chat with Eliza</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+
+    <nav class="sticky" id="menu-bar">
+      <h1 class="logo">ChatBot</h1>
+      <ul class="nav-links">
+        <li><a href="">Home</a></li>
+        <li><a href="">Features</a></li>
+        <li><a href="">Highlights</a></li>
+        <li><a href="">About</a></li>
+        <li>
+          <a href="#" class="login-button">Login</a>
+          <a href="#" class="get-started-button">Get Started</a>
+        </li>
+      </ul>
+      <img src="/static/images/hamburger.png" class="menu-btn" />
+    </nav>
+
+    <!-- hero section -->
+
+    <header>
+      <div class="header-content">
+        <h1>I'm Eliza</h1>
+        <div class="header-subcontent">
+          <h2>I am your companion througout your college journey</h2>
+        </div>
+        <a class="start-button" href="/chatpage" target="_blank"
+          >Get Started</a
+        >
+      </div>
+    </header>
+
+    <!-- script for mobile view   -->
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
+
+    <!-- script for sticky nav bar -->
+
+    <script src="/static/javascript/script.js"></script>
+
+    <!-- features section -->
+
+    <section>
+      <div class="title">
+        <h1>What We Offer</h1>
+        <div class="line"></div>
+        <div class="inlinee"></div>
+      </div>
+
+      <div class="wrapper">
+        <div class="block-1">
+          <img class="image" src="/static/images/400x400.png" alt="" />
+          <div class="block-1-content">
+            <h2>Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              quaerat atque iste quis fugit pariatur obcaecati cupiditate facere
+              natus beatae voluptatum officia id illo tenetur, ullam culpa error
+              provident laborum nobis. Reiciendis illum, explicabo delectus
+              animi eum dolor? Neque, unde.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="block-2">
+          <img class="image" src="/static/images/400x400.png" alt="" />
+          <div class="block-2-content">
+            <h2>Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              soluta qui, sit ipsum odio in laudantium atque et reprehenderit?
+              Porro laudantium error nisi aperiam, numquam reprehenderit
+              corporis similique quis! Eligendi eos quae, ipsum explicabo
+              veritatis aliquid labore incidunt tenetur nisi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="title">
+        <h1>Highlights</h1>
+        <div class="line"></div>
+        <div class="inlinee"></div>
+      </div>
+
+      <!-- video section and text -->
+      <div class="highlights-section">
+        <div class="content-highlights">
+          <div class="text-container">
+            <p>
+              <h1>Title</h1>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              repellat repudiandae quasi iste dignissimos omnis culpa corrupti
+              labore quibusdam, perferendis et dolores in aliquam. Architecto
+              tempora aut provident ratione voluptate minima, possimus odio modi
+            </p>
+            <a href="#" ><button class="highlights-button">Try <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+            </svg></button></a>
+          </div>
+          <div class="vid-container">
+            <iframe
+              class="iframe-vid"
+              src="https://www.youtube.com/embed/j2eGJGlQCCw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="adminSec">
+    <a href="adminp/" target="_blank"><button class="login-button" style="text-align: center">Admin</button></a>  
+    </div>
+  </body>
+</html>
