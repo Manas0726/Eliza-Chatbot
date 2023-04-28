@@ -1,0 +1,127 @@
+
+*, *::before {
+  box-sizing: border-box;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 39rem;
+  width: 100%;
+  max-width: 450px;
+  /* background-color: #f5f1f1; */
+  border-radius: 10px;
+  font: 1rem/1.5 "Open Sans", Arial;
+  color: #313131;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  border: solid 6px #f7f7f7;
+}
+.chat__inner {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+}
+.chat::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  height: 40%;
+  width: 100%;
+  max-width: 100px;
+  
+}
+.chat__header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f7f7f7;
+  position: absolute;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+
+.chat__header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chat__header p {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+
+
+
+.chat p {
+  margin: 0;
+  padding: 0;
+}
+.chat__message {
+  width: 70%;
+  display: flex;
+  align-items: flex-end;
+  transform-origin: 0 100%;
+  padding-top: 0;
+  transform: scale(0);
+  max-height: 0;
+  overflow: hidden;
+  animation: message 0.3s ease-out 0s forwards;
+  animation-delay: var(--timeline);
+  --bgcolor: #d8d8d8;
+  --radius: 12px 12px 12px 0;
+}
+.chat__message_B {
+  flex-direction: row-reverse;
+  text-align: right;
+  align-self: flex-end;
+  transform-origin: 100% 100%;
+  --bgcolor: #d2ecd4;
+  --radius: 12px 12px 0 12px;
+}
+.chat__message::before {
+  content: "";
+  flex: 0 0 35px;
+  aspect-ratio: 1/1;
+  background: var(--bgcolor);
+  border-radius: 50%;
+}
+.chat__content {
+  font-size: 14px;
+  flex: 0 1 auto;
+  padding: 7px 10px;
+  margin: 0 0.5rem;
+  background: var(--bgcolor);
+  border-radius: var(--radius);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+@keyframes message {
+  0% {
+    max-height: 100vmax;
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    max-height: 100vmax;
+    overflow: visible;
+    padding-top: 1rem;
+  }
+}
+h1 {
+  text-align: center;
+  color: #9bc;
+}
+

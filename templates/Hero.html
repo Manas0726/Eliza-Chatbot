@@ -1,141 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/CSS/Hero.css" />
-    <link rel="icon" href="/static/images/logo-figma.png" />
-    <script src="/static/javascript/color.js"></script>
-    <title>Chat with Eliza</title>
-  </head>
-  <body>
-    <!-- nav bar -->
 
-    <nav class="sticky" id="menu-bar">
-      <h1 class="logo">ChatBot</h1>
-      <ul class="nav-links">
-        <li><a href="">Home</a></li>
-        <li><a href="">Features</a></li>
-        <li><a href="">Highlights</a></li>
-        <li><a href="">About</a></li>
-        <li>
-          <a href="#" class="login-button">Login</a>
-          <a href="#" class="get-started-button">Get Started</a>
-        </li>
-      </ul>
-      <img src="/static/images/hamburger.png" class="menu-btn" />
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eliza-THe ChatBot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+    integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  <link rel="stylesheet" href="/static/CSS/Hero.css" />
+  <link rel="stylesheet" href="/static/CSS/animation.css" />
 
-    <!-- hero section -->
+</head>
 
-    <header>
-      <div class="header-content">
-        <h1>I'm Eliza</h1>
-        <div class="header-subcontent">
-          <h2>I am your companion througout your college journey</h2>
+<body>
+</header>
+<nav class="nav">
+  <h1 class="logo">LOGO</h1>
+  <ul class="navUL">
+    <li class="navLI"><a href="#">Credits</a></li>
+    <li class="navLI"><a href="#">GitHub</a></li>
+    <li class="navLI"><a href="#">Features</a></li>
+    <li class="navLI"><a href="#">Contact Us</a></li>
+  </ul>
+</nav>
+</header>
+
+<div class="landing">
+  <div class="content">
+    <div class="sidetext">
+      <div class="typing">
+        <div class="type"> 
+          <h2 class="title">I am
+          <span class="text"></span> </h2>
         </div>
-        <a class="start-button" href="/chatpage" target="_blank"
-          >Get Started</a
-        >
+        <p class="titlePara">Your college companion</p>
+       <a href="chatpage/"><button class="askme">Click to Start Chat</button></a>
       </div>
-    </header>
-
-    <!-- script for mobile view   -->
-    <script>
-      const menuBtn = document.querySelector(".menu-btn");
-      const navlinks = document.querySelector(".nav-links");
-
-      menuBtn.addEventListener("click", () => {
-        navlinks.classList.toggle("mobile-menu");
-      });
-    </script>
-
-    <!-- script for sticky nav bar -->
-
-    <script src="/static/javascript/script.js"></script>
-
-    <!-- features section -->
-
-    <section>
-      <div class="title">
-        <h1>What We Offer</h1>
-        <div class="line"></div>
-        <div class="inlinee"></div>
-      </div>
-
-      <div class="wrapper">
-        <div class="block-1">
-          <img class="image" src="/static/images/400x400.png" alt="" />
-          <div class="block-1-content">
-            <h2>Title</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-              quaerat atque iste quis fugit pariatur obcaecati cupiditate facere
-              natus beatae voluptatum officia id illo tenetur, ullam culpa error
-              provident laborum nobis. Reiciendis illum, explicabo delectus
-              animi eum dolor? Neque, unde.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="wrapper">
-        <div class="block-2">
-          <img class="image" src="/static/images/400x400.png" alt="" />
-          <div class="block-2-content">
-            <h2>Title</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-              soluta qui, sit ipsum odio in laudantium atque et reprehenderit?
-              Porro laudantium error nisi aperiam, numquam reprehenderit
-              corporis similique quis! Eligendi eos quae, ipsum explicabo
-              veritatis aliquid labore incidunt tenetur nisi.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="title">
-        <h1>Highlights</h1>
-        <div class="line"></div>
-        <div class="inlinee"></div>
-      </div>
-
-      <!-- video section and text -->
-      <div class="highlights-section">
-        <div class="content-highlights">
-          <div class="text-container">
-            <p>
-              <h1>Title</h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              repellat repudiandae quasi iste dignissimos omnis culpa corrupti
-              labore quibusdam, perferendis et dolores in aliquam. Architecto
-              tempora aut provident ratione voluptate minima, possimus odio modi
-            </p>
-            <a href="#" ><button class="highlights-button">Try <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-            </svg></button></a>
-          </div>
-          <div class="vid-container">
-            <iframe
-              class="iframe-vid"
-              src="https://www.youtube.com/embed/j2eGJGlQCCw"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <div class="adminSec">
-    <a href="adminp/" target="_blank"><button class="login-button" style="text-align: center">Admin</button></a>  
     </div>
-  </body>
+    <div class="chat">
+      <div class="chat__header">
+        <img src="/static/images/20220326_161638.jpg" alt="Profile Picture">
+        <p>Eliza</p>
+      </div>
+      
+      <div class="chat__inner">
+        <div class="chat__message chat__message_A">
+          <div class="chat__content">
+            <p>
+              Hello, my name is Jane.<br />
+              How can I help you?
+            </p>
+          </div>
+        </div>
+
+        <div class="chat__message chat__message_B" style="--timeline: 2s">
+          <div class="chat__content">
+            <p>
+              Hi Jane, I'm John Doe. <br />
+              I need to know how can i apply for admission
+            </p>
+          </div>
+        </div>
+
+        <div class="chat__message chat__message_A" style="--timeline: 3s">
+          <div class="chat__content">
+            <p>Sure, let me check...</p>
+          </div>
+        </div>
+
+        <div class="chat__message chat__message_A" style="--timeline: 4s">
+          <div class="chat__content">
+            <p>Mr.Doe, your current balance is 12,345.67USD</p>
+          </div>
+        </div>
+
+        <div class="chat__message chat__message_B" style="--timeline: 5s">
+          <div class="chat__content">
+            <p>
+              Thank you. Could you also check if I've recently received a
+              payment from abc corp.?
+            </p>
+          </div>
+        </div>
+
+        <div class="chat__message chat__message_A" style="--timeline: 6s">
+          <div class="chat__content">
+            <p>
+              Yes sir, a payment for 250,00 USD was accounted on March,
+              3rd.
+            </p>
+          </div>
+        </div>
+
+        <div class="chat__message chat__message_B" style="--timeline: 7s">
+          <div class="chat__content">
+            <p>Ok, thank you very much.</p>
+          </div>
+        </div>
+
+        <div class="chat__message chat__message_A" style="--timeline: 8s">
+          <div class="chat__content">
+            <p>Have a nice day!</p>
+        </div>
+        </div>
+        <div class="chat__input">
+          <input type="text" placeholder="Type your message here...">
+          <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <br><br><br>
+  <section class="features">
+    <div class="featureTitleDiv">
+      <h1 class="featureTitle">Core Features</h1>
+      </div>
+      <div class="featuresbox">
+      <div class="feature_1">
+        <h3>Voice Input  <i class="fa fa-microphone" aria-hidden="true"></i></h3>
+        <span>Eliza has voice input technology, enabling hands-free interaction. Users can speak to Eliza, and it uses natural language processing to understand their request and provide a response. This feature provides a more convenient and accessible experience for users.
+        </span>
+      </div>
+      <div class="feature_2">
+        <h3>AI Based  <i class="fa fa-link" aria-hidden="true"></i></h3>
+        <span>Eliza is an AI-powered chatbot that uses advanced NLP algorithms to learn from user interactions. With time, it adapts and responds to user inquiries in a natural and intuitive way. This results in a more personalized and smarter experience for users as the chatbot continues to learn and improve.</span>
+      </div>
+      <div class="feature_3">
+        <h3>Admin Support  <i class="fa fa-bar-chart" aria-hidden="true"></i></h3>
+        <span>The chatbot has real-time database updates and a Database Administrator for operations like ADD, UPDATE, and DELETE. An Analytics module analyzes and interprets chatbot performance data to understand user behavior, frequently asked questions, user preferences, and popular search terms.</span>
+      </div>
+      <div class="feature_4">
+        <h3> Coming soon Navigation</h3>
+        <span>Efficient and user-friendly navigation system for college providing real-time information on campus locations, events, and schedules. It helps students and faculty find their way around the campus and stay updated on important announcements, enhancing their overall campus experience.</span>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+
+  
+
+
+
+
+  <script>
+    var typing = new Typed(".text", {
+      strings: [
+        " ",
+        "Eliza",
+        "available 24/7",
+      ],
+      typeSpeed: 100,
+      backSpeed: 40,
+      loop: true,
+      showCursor: false,
+    });
+  </script>
+</body>
+
 </html>
