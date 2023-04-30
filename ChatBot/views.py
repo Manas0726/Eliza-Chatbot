@@ -20,7 +20,7 @@ agent = Agent.load(model_path)
 
 def heropage(request):
     #return render(request,"index.html")
-    return render(request,"Hero.html")
+    return render(request,"index.html")
 
 def chatpage(request):
     return render(request,"Chat.html")
