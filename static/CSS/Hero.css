@@ -15,18 +15,18 @@
   body {
     width: 100%;
     height: 100vh;
-    background: url(/static/images/back.jpeg) no-repeat;
-    background-position: bottom;
-    background-size: cover;
+    background: linear-gradient(145deg,#0d47a1,#42a5f5) no-repeat;
+    border-radius: 0 0 70% 70%/100% 100% 0 0;
   }
   
+
   /* navigation */
   
   .nav {
     display: flex;
     justify-content: center;
     gap: 700px;
-    margin: 10px 20px;
+    padding: 10px 20px;
     align-items: center;
     position: fixed;
     top: 0;
@@ -137,6 +137,9 @@
   
   .chat {
     margin-top: 39px;
+    background-image: url(/static/images/chat-bg-pattern-light.ee148af944f6580293ae.png);
+    background-position: cover;
+    background-size: cover;
   }
   
   .chat__input {
@@ -146,6 +149,7 @@
     margin-top: 10px;
     background-color: #f7f7f7;
     position: relative;
+    border-radius: 10px;
   }
   
   .chat__input input {
