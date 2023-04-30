@@ -16,9 +16,9 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  --theme-background-color: #646464;
   height: 100%;
-  background-color: var(--theme-background-color);
+  background-image: url(/static/images/bg.png);
+  background-color: #99BA92;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -50,15 +50,16 @@ body::before {
 
 .chat-area {
   background: rgba(255, 255, 255, 0.8);
-  padding: 10px 10px;
   border-radius: 10px;
   background-image: url(/static/CSS/1.png);
   background-size: 510px auto;
   mix-blend-mode: overlay;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .chat-area header {
   background-color: white;
+  border-radius: 10px 10px 0px 0px;
   box-shadow: 0 2px 2px rgba(114, 114, 114, 0.168627);
   display: flex;
   align-items: center;
@@ -91,6 +92,7 @@ body::before {
   min-height: 72vh;
   max-height: 64vh;
   overflow-y: auto;
+  padding: 0 20px;
 }
 
 /* For Chrome, Safari, and Opera */
@@ -269,7 +271,8 @@ body::before {
 
 .typing-area {
   position: relative;
-  padding: 7px 0;
+  padding: 0px 10px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -462,6 +465,43 @@ pre {
   color: #fff;
   border-radius: 18px 18px 0 18px;
 }
+/* pdf css */
+
+.pdf__details {
+  max-width: 265px;
+  width: 210px;
+  height: 80px;
+  border-radius: 10px;
+  margin-left: 10px;
+  background: #fff;
+  box-shadow: 0 2px 2px rgba(114, 114, 114, 0.168627);
+}
+
+.pdf__details a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  height: 100%;
+
+}
+
+.pdf__details img {
+  width: 33px;
+  height: 33px;
+  margin: 14px;
+}
+
+.pdf__details p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+
+
+
 
 /* Responive media query */
 @media screen and (max-width: 450px ) {

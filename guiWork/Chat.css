@@ -136,7 +136,7 @@ body::before {
 } */
 .chat-box .outgoing .details {
   margin-left: auto;
-  max-width: calc(100% - 200px);
+  max-width: calc(100% - 141px);
 }
 
 .outgoing .details p {
@@ -149,9 +149,6 @@ body::before {
 .incoming .details p {
   position: relative;
   min-width: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .loader_bar {
@@ -299,57 +296,9 @@ body::before {
 }
 
 .inputico i {
-  z-index: 3;
-  color: #707579;
-  transition: all 0.3s ease-in-out;
+  z-index: 2;
+  color:#707579 ;
 }
-
-/* .micIco {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: var(--main_height);
-  height: var(--main_height);
-  right: 70px;
-}
-
-.micIco i {
-  z-index: 3;
-  color: #707579;
-  transition: all 0.3s ease-in-out;
-}
-
-.micIco i:hover,
-.inputico i:hover {
-  background-color: rgba(204, 204, 204, 0.6);
-  border-radius: 16px;
-  padding: 3px;
-}
-
-
-.micIcoOff {
-  position: absolute;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  width: var(--main_height);
-  height: var(--main_height);
-  right: 70px;
-}
-
-.micIcoOff i {
-  z-index: 3;
-  color: #707579;
-  transition: all 0.3s ease-in-out;
-}
-
-.micIcoOff i:hover,
-.inputico i:hover {
-  background-color: rgba(204, 204, 204, 0.6);
-  border-radius: 16px;
-  padding: 3px;
-} */
 
 #offmic {
   color: #e60000;
@@ -407,24 +356,11 @@ body::before {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+pre {
+  white-space: pre-wrap; /* This will make the text wrap within the pre tag */
+  width: 100%;
+  max-width: 400px;
+}
 
 
 #sendMsg i {
@@ -526,6 +462,43 @@ body::before {
   color: #fff;
   border-radius: 18px 18px 0 18px;
 }
+
+/* pdf css */
+
+.pdf__details {
+  max-width: 265px;
+  width: 210px;
+  height: 80px;
+  border-radius: 10px;
+  margin-left: 10px;
+  background: #fff;
+  box-shadow: 0 2px 2px rgba(114, 114, 114, 0.168627);
+}
+
+.pdf__details a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  height: 100%;
+
+}
+
+.pdf__details img {
+  width: 33px;
+  height: 33px;
+  margin: 14px;
+}
+
+.pdf__details p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+
+
 
 /* Responive media query */
 @media screen and (max-width: 450px ) {
@@ -635,7 +608,7 @@ body::before {
 }
 
 /* for i phone SE */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px){
   .wrapper {
     top: 0;
   }
@@ -742,8 +715,8 @@ body::before {
 }
 
 /* for i phone XR */
-
-@media screen and (max-width: 414px) {
+ 
+ /* @media screen and (max-width: 414px) {
   .wrapper {
     top: 0;
   }
@@ -847,12 +820,12 @@ body::before {
   .typing-area {
     gap: 4px;
   }
-}
+}  */
 
 /*  for i phone 12 Pro */
 
-
-@media screen and (max-width: 390px) {
+/* 
+/* @media screen and (max-width: 390px) {
   .wrapper {
     top: 0;
   }
@@ -956,4 +929,4 @@ body::before {
   .typing-area {
     gap: 4px;
   }
-}
+} 
