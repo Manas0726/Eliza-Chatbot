@@ -57,8 +57,12 @@
     align-items: center;
     justify-content: space-between;
   }
-  
-  
+/*   
+  .svgimg img{
+    background-position: bottom;
+    width: 100%;
+    z-index: 10;
+  } */
   
   .sidetext {
     width: 100%;
