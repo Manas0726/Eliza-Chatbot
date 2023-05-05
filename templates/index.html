@@ -13,14 +13,14 @@
     integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
   <link rel="stylesheet" href="/static/CSS/Hero.css" />
   <link rel="stylesheet" href="/static/CSS/animation.css" />
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
-</header>
+<div class="back">
+
 <nav class="nav" id="menu-bar">
   <h1 class="logo">LOGO</h1>
   <ul class="navUL">
@@ -30,7 +30,7 @@
     <li class="navLI"><a href="#">Contact Us</a></li>
   </ul>
 </nav>
-</header>
+
 
 <div class="landing">
   <div class="content">
@@ -118,45 +118,97 @@
     </div>
   </div>
 
-  <div class="svgimg">
-    <img src="/static/images/download.svg" alt="">
-  </div>
 </div>
 
-
   <br><br><br>
-  <section class="features">
-    <div class="featureTitleDiv">
-      <h1 class="featureTitle">Core Features</h1>
-      </div>
-      <div class="featuresbox">
-      <div class="feature_1">
-        <div class="1">
-          <span></span>
-          1
-        </div>
-        <h3>Voice Input  <i class="fa fa-microphone" aria-hidden="true"></i></h3>
-        <span>Eliza has voice input technology, enabling hands-free interaction. Users can speak to Eliza, and it uses natural language processing to understand their request and provide a response. This feature provides a more convenient and accessible experience for users.
-        </span>
-      </div>
-      <div class="feature_2">
-        <h3>AI Based  <i class="fa fa-link" aria-hidden="true"></i></h3>
-        <span>Eliza is an AI-powered chatbot that uses advanced NLP algorithms to learn from user interactions. With time, it adapts and responds to user inquiries in a natural and intuitive way. This results in a more personalized and smarter experience for users as the chatbot continues to learn and improve.</span>
-      </div>
-      <div class="feature_3">
-        <h3>Admin Support  <i class="fa fa-bar-chart" aria-hidden="true"></i></h3>
-        <span>The chatbot has real-time database updates and a Database Administrator for operations like ADD, UPDATE, and DELETE. An Analytics module analyzes and interprets chatbot performance data to understand user behavior, frequently asked questions, user preferences, and popular search terms.</span>
-      </div>
-      <div class="feature_4">
-        <h3> Coming soon Navigation</h3>
-        <span>Efficient and user-friendly navigation system for college providing real-time information on campus locations, events, and schedules. It helps students and faculty find their way around the campus and stay updated on important announcements, enhancing their overall campus experience.</span>
-      </div>
-    </div>
 
+  <section class="features">
+    <div class="container">
+      <h2 class="section-heading">Our Chatbot Features</h2>
+      <div class="cards">
+        <div class="card">
+          <i class="fas fa-comments"></i>
+          <h3>24/7 Support</h3>
+          <p>Our chatbot is always available to help you with any questions or issues you may have, no matter what time of day or night it is.</p>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-robot"></i>
+          <h3>Artificial Intelligence</h3>
+          <p>Our chatbot uses the latest AI technology to provide you with personalized and relevant responses to your queries.</p>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-thumbs-up"></i>
+          <h3>User-Friendly</h3>
+          <p>Our chatbot is designed to be easy to use, so you don't have to be a tech expert to get the most out of it.</p>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-lock"></i>
+          <h3>Secure</h3>
+          <p>Your privacy and security are our top priority, so you can trust that your data is safe with our chatbot.</p>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-headset"></i>
+          <h3>Admin Support</h3>
+          <p>If you need additional assistance, our chatbot also has the option to connect you with a live admin support team.</p>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-microphone"></i>
+          <h3>Voice Input Support</h3>
+          <p>You can also use our chatbot with voice input, making it even easier and more convenient to get the answers you need.</p>
+        </div>
+        
+      </div>
     </div>
   </section>
 
+<!-- contact us -->
+<section class="contactUs">
+  <div class="wrapper">
+    <header>Send us a Message</header>
+    <form id="contactForm">
+      <div class="dbl-field">
+        <div class="field">
+          <input type="text" name="name" placeholder="Enter your name">
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="email" name="email" placeholder="Enter your email">
+          <i class='fas fa-envelope'></i>
+        </div>
+      </div>
+      <div class="dbl-field">
+      </div>
+      <div class="message">
+        <textarea placeholder="Write your message" name="message"></textarea>
+        <i class="material-icons">message</i>
+      </div>
+      <div class="button-area">
+        <button type="submit" id="submitBtn">Send Message</button>
+        <span id="status"></span>
+      </div>
+    </form>
+  </div>
+</section>
+  
+<footer>
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright © 2023 <a href="#">ElizaChatBot.</a>All rights reserved</span>
+      <span class="policy_terms">
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms & condition</a>
+      </span>
+    </div>
+  </div>
+</footer>
+  
 
+  </body>
   <script>
     var typing = new Typed(".text", {
       strings: [
@@ -170,6 +222,7 @@
       showCursor: false,
     });
   </script>
-  <script src="/static/javascript/color.js"></script>
-</body>
+  <script src="/static/javascript/color.js"></script> 
+  <!-- <script src="/static/javascript/contactUs.js"></script> --
+
 </html>
