@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eliza-The ChatBot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+    integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  <link rel="stylesheet" href="/static/CSS/Hero.css" />
+  <link rel="stylesheet" href="/static/CSS/animation.css" />
+  <link rel="stylesheet" href="/static/CSS/login.css"/>
+
+</head>
+
+<body>
+</header>
+<nav class="nav">
+  <h1 class="logo">LOGO</h1>
+  <ul class="navUL">
+    <li>
+        <!--<a href="{% url 'login' %}" class="navLI">Login</a> -->  
+        <a href="{% url 'signup' %}"  target="_blank" class="navLI">SignUp</a>
+    </li>
+    <li>
+      <a href="{% url 'superlogin' %}" target="_blank" class="navLI">Admin</a>
+    </li>  
+  </ul>
+</nav>
+</header>
+
+<div class="landing">
+  <div class="content">
+    <div class="sidetext">
+      <div class="typing">
+        <div class="type"> 
+          <h2 class="title">
+          <span class="text"></span> </h2>
+        </div>
+        <p class="titlePara"></p>
+      </div>
+    </div>
+    <div class="chat">
+        <div class="container"> 
+            <div class="chat__header">
+                <p>Login</p>
+            </div>
+           
+            <form method="post">
+                {%csrf_token%}
+              {% if messages %}
+               <script>
+                  {% for message in messages %}
+                     alert('{{ message }}');
+                  {% endfor %}
+                </script>
+               {% endif %}
+
+                <div class="top">
+                    <header>Login</header>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" class="input" placeholder="Enter Username" id="Username" name="username">
+                    <i class='bx bx-user' ></i>
+                </div>
+
+                <div class="input-field">
+                    <input type="Password" class="input" placeholder="Password" id="PAssword" name="pass">
+                    <i class='bx bx-lock-alt'></i>
+                </div>
+
+                <div class="input-field">
+                    <input type="submit" class="submit" value="Login" id="">
+                </div>
+
+                <div class="two-col">
+                    
+                    <div class="two">
+                        <label><a href="{% url 'password_reset' %}">Forgot password?</a></label>
+                    </div>
+                    <div class="top">
+                        <label><a href="{% url 'signup' %}">Dont't Have a Account? SignUp</a></label>
+                    </div>
+                </div>
+            </form>   
+        </div>
+    </div>
+    
+  <script>
+    var typing = new Typed(".text", {
+      strings: [
+        " ",
+        "I am Eliza",
+        "You are most Welcome",
+        "please login to continue",
+        " ",
+      ],
+      typeSpeed: 100,
+      backSpeed: 40,
+      loop: true,
+      showCursor: false,
+    });
+  </script>
+</body>
+
+</html>

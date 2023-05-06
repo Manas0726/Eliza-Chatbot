@@ -32,6 +32,7 @@ ALLOWED_HOSTS =['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'ChatBot',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -69,6 +70,14 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'ChatBot.wsgi.application'
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+
 
 
 # Database
@@ -124,4 +133,13 @@ STATICFILES_DIRS =[
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+#EMAIL_BACKEND is only  for local host server  when u release project u remove this line.
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend' 
+EMAIL_HOST ='smtp.gmail.com'
+EMAIL_PORT=587
+EMAIL_HOST_USER='eliza2023.cm@gmail.com'
+EMAIL_HOST_PASSWORD='uccjsfzkgmwqfguc'
+EMAIL_USE_TLS=True
 

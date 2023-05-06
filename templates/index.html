@@ -18,8 +18,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<body>
-<div class="back">
+<body class="back">
+<!-- <div class="back"> -->
 
 <nav class="nav" id="menu-bar">
   <h1 class="logo">LOGO</h1>
@@ -41,7 +41,7 @@
           <span class="text"></span> </h2>
         </div>
         <p class="titlePara">Your college companion</p>
-       <a href="chatpage/"><button class="askme">Click to Start Chat</button></a>
+       <a href="{% url 'login' %}"><button class="askme">Click to Start Chat</button></a>
       </div>
     </div>
     <div class="chat">
@@ -54,7 +54,7 @@
         <div class="chat__message chat__message_A">
           <div class="chat__content">
             <p>
-              Hello, my name is Jane.<br />
+              Hello, my name is Eliza.<br />
               How can I help you?
             </p>
           </div>
@@ -167,10 +167,19 @@
   </section>
 
 <!-- contact us -->
+<h2 class="section-heading Reach">Reach Us</h2>
 <section class="contactUs">
   <div class="wrapper">
     <header>Send us a Message</header>
-    <form id="contactForm">
+    <form id="contactForm" method="POST" > <!-- action="{% url 'send_email' %}" -->
+      {% csrf_token %}
+                {% if messages %}
+                {% for message in messages %}
+                <script>
+                     alert('{{ message }}');
+                </script>
+                {% endfor %}
+               {% endif %}
       <div class="dbl-field">
         <div class="field">
           <input type="text" name="name" placeholder="Enter your name">
@@ -194,6 +203,9 @@
     </form>
   </div>
 </section>
+<div class="buttonDiv"> 
+  <a href="{% url 'superlogin' %}" target="_self"><button class="butt">Admin</button></a>
+</div>
   
 <footer>
   <div class="bottom-details">
