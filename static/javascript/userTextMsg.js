@@ -125,7 +125,7 @@ submitBtn.addEventListener("click", (event) => {
         const rasamsgDiv = document.createElement("div");
         rasamsgDiv.classList.add("chat", "incoming", "responseImageContainer", "responseImg");
         rasamsgDiv.innerHTML = `
-          <img src="/static/images/logo-figma.png" alt="" />
+          <img src="/static/images/chatbot-icon2 copy.png" alt="" width="35px" height="35px"/>
           <div class="details">
             <p class="user-msg">${data.msg}</p>
             <div class="responseImageContainer">

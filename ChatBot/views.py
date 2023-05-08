@@ -38,9 +38,6 @@ def feedback(request):
         uname=request.POST.get('name')
         uemail=request.POST.get('email')
         umessage=request.POST.get('message')
-        print(uemail)
-        print(uname)
-        print(umessage)
         if uname and uemail and umessage:
             subject = ('hey this is feedback to you from '+uname)
             message = (umessage)
@@ -52,13 +49,14 @@ def feedback(request):
             'Sender email: {}\n\n{}'.format(sender_email, message),
             sender_email,
             [recipient_email],
-            fail_silently=False,
-            )
+            fail_silently=False
+            ) 
             messages.success(request,'Thanks For Your FeedBack.')
             return redirect('home')
-    else:
-        messages.success(request,'Please Fill in all Fields')
-        return render (request,'home')        
+        else:
+            messages.success(request,'Please Fill in all Fields')
+            return redirect('home')
+    return render (request,'home')      
 
 # def send_email1(request):
 #     if request.method == 'POST':
