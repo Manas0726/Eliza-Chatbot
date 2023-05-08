@@ -25,7 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('rasachat/<str:inputValue>/', views.rasachat, name='rasachat'),
     path('',views.heropage,name='home'),#as we have to call this page impicitly
-    path('send_email/',views.send_email,name='feedback'),
+    path('feedback/',views.feedback,name='feedback'),
     path('chatpage/',views.chatpage,name='chat'),#static url
     path('buttonmsg/<str:buttonName>/',views.buttonmsg,name='buttonmsg'), #dynamic url if we dont know which value will be there the dont write it
     path('subbuttonmsg/<str:corekey>/<str:content>/',views.subbuttonmsg,name='subbuttonmsg'),

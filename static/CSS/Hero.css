@@ -5,6 +5,7 @@
   list-style-type: none;
   text-decoration: none;
   font-family: "EUCLID CIRCULAR B";
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -125,6 +126,11 @@ body {
   font-size: 15px;
 }
 
+.highlights {
+  font-weight: 800;
+}
+ 
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -145,17 +151,19 @@ body {
 
 .chat {
   margin-top: 39px;
+  border-radius: 20px;
   background-image: url(/static/images/chat-bg-pattern-light.ee148af944f6580293ae.png);
   background-position: cover;
   background-size: cover;
 }
+
 
 .chat__input {
   display: flex;
   align-items: center;
   padding: 10px;
   margin-top: 10px;
-  background-color: #f7f7f7;
+  background-color: white;
   position: relative;
   border-radius: 10px;
 }
@@ -221,19 +229,19 @@ body {
 }
 
 .card {
-  width: 279px;
-  height: 339px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin: 20px;
-  padding: 27px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
+    width: 279px;
+    height: 339px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 56px rgba(69,69,69,.2);
+    margin: 20px;
+    padding: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
 }
 
 .card:hover {
@@ -257,6 +265,67 @@ body {
   margin-bottom: 20px;
 }
 
+/* admin */
+
+.adminG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin: 109px 20px;
+}
+
+.adminImg {
+  margin-left: 70px;
+}
+
+.adminIMGS {
+width: 443px;
+    height: 334px;
+    
+}
+
+.contentAdmin {
+      width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.textAdmin {
+  line-height: 20pt;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.buttonAdmin {
+  margin-top: 20px;
+}
+
+.AdminButton {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    background: #0084ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.ionicon {
+  width: 20px;
+    height: 20px;
+}
+
+.titleA {
+  flex: 0 48px;
+}
+
 /* contact us */
 
 ::selection {
@@ -266,8 +335,8 @@ body {
 .wrapper {
   width: 715px;
   background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  box-shadow: 0px 0px 56px rgba(69,69,69,.2);
 }
 .wrapper header {
   font-size: 22px;

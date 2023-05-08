@@ -1,6 +1,8 @@
 
   /* style the form container */
-
+body {
+  background: #e7f2fd;
+}
   
   /* style the form */
   .form {
@@ -184,6 +186,7 @@
     background: #e7f2fd;
     }
 
-.addContainer::after {
-  margin-top: 1001px;
+.addContainer{
+  height: 90vh;
+  margin-top: 60px;
 }

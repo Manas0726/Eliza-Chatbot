@@ -5,7 +5,7 @@ window.onscroll = function () {
 
   if (window.pageYOffset >= 30 && window.innerWidth >= 15) {
     // navbar.style.color = "black";
-    navbar.style.backgroundColor = "rgba(13, 71, 161, 0.5)"; // add light black color
+    navbar.style.backgroundColor = "rgba(13, 71, 161, 0.9)"; // add light black color
     navbar.style.backdropFilter = "blur(5px)"; // add backdrop filter
   } else {
     navbar.style.color = "white";

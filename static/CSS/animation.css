@@ -27,6 +27,7 @@
   content: "";
   position: absolute;
   z-index: 1;
+  border-radius: 20px;
   top: 0;
   height: 40%;
   width: 100%;
@@ -36,7 +37,7 @@
 .chat__header {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
   background-color: #f7f7f7;
   position: absolute;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);

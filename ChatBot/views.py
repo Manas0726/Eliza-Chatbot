@@ -33,7 +33,7 @@ def heropage(request):
     return render(request,"index.html")
 
 @csrf_protect
-def send_email(request):
+def feedback(request):
     if request.method=='POST':
         uname=request.POST.get('name')
         uemail=request.POST.get('email')
@@ -42,9 +42,9 @@ def send_email(request):
         print(uname)
         print(umessage)
         if uname and uemail and umessage:
-            subject = ('hey this is feedback to you from'+uname)
-            message = umessage
-            sender_email = uemail
+            subject = ('hey this is feedback to you from '+uname)
+            message = (umessage)
+            sender_email = (uemail)
             recipient_email = 'eliza2023.cm@gmail.com'
 
             send_mail(
@@ -53,31 +53,30 @@ def send_email(request):
             sender_email,
             [recipient_email],
             fail_silently=False,
-        )
-        messages.success(request,'Thanks For Your FeedBack.')
-        return redirect('home')
+            )
+            messages.success(request,'Thanks For Your FeedBack.')
+            return redirect('home')
     else:
         messages.success(request,'Please Fill in all Fields')
-    
-    return render (request,'home')        
+        return render (request,'home')        
 
-def send_email1(request):
-    if request.method == 'POST':
-        subject = ('hey this is feedback to you')
-        message = request.POST.get('message', '')
-        sender_email = request.POST.get('email', '')
-        recipient_email = 'eliza2023.cm@gmail.com'
+# def send_email1(request):
+#     if request.method == 'POST':
+#         subject = ('hey this is feedback to you')
+#         message = request.POST.get('message', '')
+#         sender_email = request.POST.get('email', '')
+#         recipient_email = 'eliza2023.cm@gmail.com'
         
-        send_mail(
-            subject,
-            'Sender email: {}\n\n{}'.format(sender_email, message),
-            sender_email,
-            [recipient_email],
-            fail_silently=False,
-        )
-        return HttpResponseRedirect('/success/')
+#         send_mail(
+#             subject,
+#             'Sender email: {}\n\n{}'.format(sender_email, message),
+#             sender_email,
+#             [recipient_email],
+#             fail_silently=False,
+#         )
+#         #return HttpResponseRedirect('/success/')
         
-    return render(request, 'email_form.html')
+#     return render(request, 'email_form.html')
 
 @csrf_protect
 def Signuppage(request):

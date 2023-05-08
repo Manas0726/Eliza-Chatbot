@@ -24,10 +24,9 @@
 <nav class="nav" id="menu-bar">
   <div class="logo"><img class="img" src="/static/images/chatbot-icon2.png" alt=""></div>
   <ul class="navUL">
-    <li class="navLI"><a href="#">Credits</a></li>
-    <li class="navLI"><a href="#">GitHub</a></li>
-    <li class="navLI"><a href="#">Features</a></li>
-    <li class="navLI"><a href="#">Contact Us</a></li>
+    <li class="navLI"><a href="#feature">Features</a></li>
+    <li class="navLI"><a href="#admin">Admin Support</a></li>
+    <li class="navLI"><a href="#contact">Contact Us</a></li>
   </ul>
 </nav>
 
@@ -122,7 +121,7 @@
 
   <br><br><br>
 
-  <section class="features">
+  <section class="features" id="feature">
     <div class="container">
       <h2 class="section-heading">Our Chatbot Features</h2>
       <div class="cards">
@@ -166,12 +165,26 @@
     </div>
   </section>
 
+<section class="adminG">
+  <div class="adminImg" >
+      <img src="/static/images/admin.jpg" alt="" class="adminIMGS">
+  </div>
+  <div class="contentAdmin">
+    <h2 class="titleA" id="admin">Admin Support</h2>
+    <p class="textAdmin">
+      The admin page on our chatbot website is a crucial tool for managing and optimizing your chatbot's performance. With  <span class="highlights">detailed analytics data</span> , you can gain insights into how your chatbot is performing, and use that information to make informed decisions about how to improve it. The <span class="highlights"> data modification features</span> allow you to fine-tune your chatbot's responses and conversation flows to ensure the best user experience. These tools help ensure that your chatbot is functioning at its best, providing your users with a seamless and satisfying experience.</p>
+    <div class="buttonAdmin">
+      <a href="{% url 'superlogin' %}" target="_self"><button class="AdminButton">Admin <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/></svg></ion-icon> </button></a>
+    </div>
+  </div>
+</section>
+
 <!-- contact us -->
 <h2 class="section-heading Reach">Reach Us</h2>
-<section class="contactUs">
+<section class="contactUs" id="contact">
   <div class="wrapper">
     <header>Send us a Message</header>
-    <form id="contactForm" method="POST" >
+    <form id="contactForm" method="POST" action ="{% url 'feedback' %}">
       {% csrf_token %}
                 {% if messages %}
                 {% for message in messages %}
@@ -203,9 +216,7 @@
     </form>
   </div>
 </section>
-<div class="buttonDiv"> 
-  <a href="{% url 'superlogin' %}" target="_self"><button class="butt">Admin</button></a>
-</div>
+
   
 <footer>
   <div class="bottom-details">

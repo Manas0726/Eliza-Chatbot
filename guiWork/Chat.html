@@ -1,20 +1,261 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Avatar Page</title>
-    <link rel="stylesheet" type="text/css" href="Chat.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eliza-THe ChatBot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+    integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Chat.css" />
+  <link rel="stylesheet" href="/static/CSS/animation.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<body>
-    <h1>Avatar Page</h1>
-    <div class="avatar-container">
-        <div class="avatar">
-            <img src="https://i.imgur.com/f8L1JYv.png" alt="Male Avatar">
-            <h2>John Doe</h2>
+
+<body class="back">
+<!-- <div class="back"> -->
+
+<nav class="nav" id="menu-bar">
+  <div class="logo"><img class="img" src="/static/images/chatbot-icon2.png" alt=""></div>
+  <ul class="navUL">
+    <li class="navLI"><a href="#">Credits</a></li>
+    <li class="navLI"><a href="#">GitHub</a></li>
+    <li class="navLI"><a href="#">Features</a></li>
+    <li class="navLI"><a href="#">Contact Us</a></li>
+  </ul>
+</nav>
+
+
+<div class="landing">
+  <div class="content">
+    <div class="sidetext">
+      <div class="typing">
+        <div class="type"> 
+          <h2 class="title">I am
+          <span class="text"></span> </h2>
         </div>
-        <div class="avatar">
-            <img src="https://i.imgur.com/54k15dW.png" alt="Female Avatar">
-            <h2>Jane Smith</h2>
+        <p class="titlePara">Your college companion</p>
+       <a href="{% url 'login' %}"><button class="askme">Click to Start Chat</button></a>
+      </div>
+    </div>
+    <div class="chat">
+      <div class="chat__header">
+        <img src="/static/images/chatbot-icon2 copy.png" alt="Profile Picture">
+        <p>Eliza</p>
+      </div>
+      
+      <div class="chat__inner">
+        <div class="chat__message chat__message_A">
+          <div class="chat__content">
+            <p>
+              Hello, my name is Eliza.<br />
+              How can I help you?
+            </p>
+          </div>
+        </div>
+
+        <div class="chat__message chat__message_B" style="--timeline: 2s">
+          <div class="chat__content">
+            <p>
+              Hi Jane, I'm John Doe. <br />
+              I need to know how can i apply for admission
+            </p>
+          </div>
+        </div>
+
+        <div class="chat__message chat__message_A" style="--timeline: 3s">
+          <div class="chat__content">
+            <p>Sure, let me check...</p>
+          </div>
+        </div>
+
+        <div class="chat__message chat__message_A" style="--timeline: 4s">
+          <div class="chat__content">
+            <p>Mr.Doe, your current balance is 12,345.67USD</p>
+          </div>
+        </div>
+
+        <div class="chat__message chat__message_B" style="--timeline: 5s">
+          <div class="chat__content">
+            <p>
+              Thank you. Could you also check if I've recently received a
+              payment from abc corp.?
+            </p>
+          </div>
+        </div>
+
+        <div class="chat__message chat__message_A" style="--timeline: 6s">
+          <div class="chat__content">
+            <p>
+              Yes sir, a payment for 250,00 USD was accounted on March,
+              3rd.
+            </p>
+          </div>
+        </div>
+
+        <div class="chat__message chat__message_B" style="--timeline: 7s">
+          <div class="chat__content">
+            <p>Ok, thank you very much.</p>
+          </div>
+        </div>
+
+        <div class="chat__message chat__message_A" style="--timeline: 8s">
+          <div class="chat__content">
+            <p>Have a nice day!</p>
+        </div>
+        </div>
+        <div class="chat__input">
+          <input type="text" placeholder="Type your message here...">
+          <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <br><br><br>
+
+  <section class="features">
+    <div class="container">
+      <h2 class="section-heading">Our Chatbot Features</h2>
+      <div class="cards">
+        <div class="card">
+          <i class="fas fa-comments"></i>
+          <h3>24/7 Support</h3>
+          <p>Our chatbot is always available to help you with any questions or issues you may have, no matter what time of day or night it is.</p>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-robot"></i>
+          <h3>Artificial Intelligence</h3>
+          <p>Our chatbot uses the latest AI technology to provide you with personalized and relevant responses to your queries.</p>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-thumbs-up"></i>
+          <h3>User-Friendly</h3>
+          <p>Our chatbot is designed to be easy to use, so you don't have to be a tech expert to get the most out of it.</p>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-lock"></i>
+          <h3>Secure</h3>
+          <p>Your privacy and security are our top priority, so you can trust that your data is safe with our chatbot.</p>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-headset"></i>
+          <h3>Admin Support</h3>
+          <p>If you need additional assistance, our chatbot also has the option to connect you with a live admin support team.</p>
+        </div>
+        
+        <div class="card">
+          <i class="fas fa-microphone"></i>
+          <h3>Voice Input Support</h3>
+          <p>You can also use our chatbot with voice input, making it even easier and more convenient to get the answers you need.</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- admin -->
+
+<section class="admin">
+    <div class="adminImg">
+        <img src="/Eliza-Chatbot/static/images/admin.jpg" alt="" class="adminImgCO">
+    </div>
+    <div class="contentAdmin">
+        <h1 class="adminTitle">Admin Support</h1>
+        <div class="textAdmin">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum placeat, aliquam odio doloribus aperiam enim consequuntur modi error voluptatum perspiciatis, mollitia hic! Quod facilis necessitatibus dolor porro sequi consectetur voluptate itaque ratione dicta, consequuntur repellendus culpa officiis ea eveniet quasi dolore adipisci nihil veniam? Debitis sit commodi impedit quidem officia!</p>
         </div>
     </div>
-</body>
+</section>
+
+
+
+
+
+
+<!-- contact us -->
+<h2 class="section-heading Reach">Reach Us</h2>
+<section class="contactUs">
+  <div class="wrapper">
+    <header>Send us a Message</header>
+    <form id="contactForm" method="POST" >
+      {% csrf_token %}
+                {% if messages %}
+                {% for message in messages %}
+                <script>
+                     alert('{{ message }}');
+                </script>
+                {% endfor %}
+               {% endif %}
+      <div class="dbl-field">
+        <div class="field">
+          <input type="text" name="name" placeholder="Enter your name">
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="email" name="email" placeholder="Enter your email">
+          <i class='fas fa-envelope'></i>
+        </div>
+      </div>
+      <div class="dbl-field">
+      </div>
+      <div class="message">
+        <textarea placeholder="Write your message" name="message"></textarea>
+        <i class="material-icons">message</i>
+      </div>
+      <div class="button-area">
+        <button type="submit" id="submitBtn">Send Message</button>
+        <span id="status"></span>
+      </div>
+    </form>
+  </div>
+</section>
+<div class="buttonDiv"> 
+  <a href="{% url 'superlogin' %}" target="_self"><button class="butt">Admin</button></a>
+</div>
+  
+<footer>
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright © 2023 <a href="#">ElizaChatBot.</a>All rights reserved</span>
+      <span class="policy_terms">
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms & condition</a>
+      </span>
+    </div>
+  </div>
+</footer>
+  
+
+  </body>
+  <script>
+    var typing = new Typed(".text", {
+      strings: [
+        " ",
+        "Eliza",
+        "available 24/7",
+      ],
+      typeSpeed: 100,
+      backSpeed: 40,
+      loop: true,
+      showCursor: false,
+    });
+  </script>
+  <script src="/static/javascript/color.js"></script> 
+  <!-- <script src="/static/javascript/contactUs.js"></script> --
+
 </html>
