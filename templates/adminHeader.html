@@ -1,81 +1,98 @@
 {% load static %}
 <!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Menu for Admin Dashboard | CodingNepal</title>
+    <link rel="stylesheet" href="/static/CSS/adminHeader.css" />
+    <!-- Fontawesome CDN Link -->
+    <script src="https://kit.fontawesome.com/1d53257c5d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <a href="#" class="logo">Eliza Admin</a>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/static/CSS/adminHeader.css" />
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
-  <title>Welcome Admin</title>
-</head>
-<div class="navBar">
-  <h1 class="logo">Admin Panel</h1>
-  <nav>
+      <div class="menu-content">
+        <ul class="menu-items">
+          <div class="menu-title">Menu</div>
 
-    <ul class="ulList">
- 
-      <li class="liList">
-        <a href="" class="modify">Modify <i class="fas fa-caret-down"></i></a>
+          <li class="item">
+            <div class="submenu-item">
+              <span>Modification</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
 
-        <div class="dropdown-menu">
-          <ul class="ulSubList">
-            <li class="liSublist"><a href="/adminp/add">Add</a></li>
-            <li>
-              <a href="#">Update <i class="fas fa-caret-right"></i></a>
-
-              <div class="dropdown-menu-1">
-                <ul class="Uldropdown-menu-1">
-                  <li><a href="/adminp/updateKeyword">Keyword</a></li>
-                  <li><a href="/adminp/updateAnswer">Answer</a></li>
-                </ul>
+            <ul class="menu-items submenu">
+              <div class="menu-title">
+                <i class="fa-solid fa-chevron-left"></i>
+                Modification
               </div>
+              <li class="item">
+                <a href="/adminp/add">Add</a>
+              </li>
+              <li class="item">
+                <a href="/adminp/updateKeyword">Update Keyword</a>
+              </li>
+              <li class="item">
+                <a href="/adminp/updateAnswer">Update Answer</a>
+              </li>
+              <li class="item">
+                <a href="/adminp/delete">Delete</a>
+              </li>
+            </ul>
+          </li>
+          <li class="item">
+            <div class="submenu-item">
+              <span>Analytics</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <ul class="menu-items submenu">
+              <div class="menu-title">
+                <i class="fa-solid fa-chart-mixed" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-chevron-left"></i>
+                Analytics
+              </div>
+              <li class="item">
+                <a href="/adminp/majorA">All Keys</a>
+              </li>
+              <li class="item">
+                <a href="/adminp/AnalyticsKey1/Admission">Admission</a>
+              </li>
+              <li class="item">
+                <a href="/adminp/AnalyticsKey1/Hostel">Hostel</a>
+              </li>
+              <li class="item">
+                <a href="/adminp/AnalyticsKey1/Scholarship">Scholarship</a>
+              </li>
+              <li class="item">
+                <a href="/adminp/AnalyticsKey1/Library">Library</a>
+              </li>
+              <li class="item">
+                <a href="/adminp/AnalyticsKey1/Committee">Committee</a>
+              </li>
+            </ul>
+          </li>
+          <li class="item">
+            <a href="/adminp/jsonList"><span>JSON Data</span></a>
             </li>
-            <li><a href="/adminp/delete">Delete</a></li>
-          </ul>
-        </div>
-
-      <!-- <li class="liList"><a href="">Analytics <i class="fas fa-caret-down"></i></a></li> -->
-      <!-- <div class="dropdown-menu-2">
-        <ul class="dropdown-menu-ul">
-          <li class="dropdown-menu-li"><a href="/adminp/majorA">Major</a></li>
-          <li class="dropdown-menu-li"><a href="/adminp/AnalyticsKey1/Admission">Admission</a></li>
-          <li class="dropdown-menu-li"><a href="/adminp/AnalyticsKey1/Hostel">Hostel</a></li>
-          <li class="dropdown-menu-li"><a href="/adminp/AnalyticsKey1/Scholarship">Scholarship</a></li>
-          <li class="dropdown-menu-li"><a href="/adminp/AnalyticsKey1/Library">Library</a></li>
-          <li class="dropdown-menu-li"><a href="/adminp/AnalyticsKey1/Courses">Courses</a></li>
+          </div>
+          <li class="item1">
+            <a href="#">Logout</a>
+          </li>
         </ul>
-      </div> -->
-
-
-      <li class="liList">
-        <a href="#">Analytics <i class="fas fa-caret-down"></i></a>
-        <div class="dropdown-menu-2">
-          <ul>
-            <li><a href="/adminp/majorA">Major</a></li>
-            <li><a href="/adminp/AnalyticsKey1/Admission">Admission</a></li>
-            <li><a href="/adminp/AnalyticsKey1/Hostel">Hostel</a></li>
-            <li><a href="/adminp/AnalyticsKey1/Scholarship">Scholarship</a></li>
-            <li><a href="/adminp/AnalyticsKey1/Library">Library</a></li>
-            <li><a href="/adminp/AnalyticsKey1/Courses">Courses</a></li>
-          </ul>
-        </div>
-      </li>
-      
-      <button>Login</button>
-      <button>SignUp</button>
-
-      <div class="containerImg">
-        <img src="/static/images/user-icon.png" alt="" class="userImg" />
       </div>
-    </ul>
-  </nav>
-  </div>
+    </nav>
 
+    <nav class="navbar">
+      <i class="fa-solid fa-bars" id="sidebar-close"></i>
+    </nav>
+    <!-- <div class="header">Admin Panel</div> -->
+
+  </body>
+  <script src="/static/javascript/adminNav.js"></script>
+</html>

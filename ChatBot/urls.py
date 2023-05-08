@@ -42,6 +42,7 @@ urlpatterns = [
     path('deleteElement/<str:subKeyVal>/<str:inputField>/',views.deleteElement,name='deleteElement'),
     path('updatedKey/<str:subKeyVal>/<str:inputField>/<str:updatedKey>/', views.keyupdate, name='updatedKey'),
     path('updatedAns/<str:subKeyVal>/<str:inputField>/<str:updatedAnswer>/', views.ansupdate, name='updatedAns'),
+    path('adminp/jsonList/', views.jsonList),
         #paths for registration
     path('signup/',views.Signuppage,name='signup'),
     path('login/',views.Loginpage,name='login'),

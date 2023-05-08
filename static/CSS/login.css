@@ -3,7 +3,7 @@
     font-family: 'poppins' ,sans-serif;
 }
 body{
-    background-image: url("/static/images/back.jpeg");
+    background-image: url("/static/images/adminback.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

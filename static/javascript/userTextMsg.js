@@ -89,7 +89,7 @@ submitBtn.addEventListener("click", (event) => {
       <div class="details">
         <p class="user-msg">${inputValue}</p>
       </div>
-      <img class="userImg" src="/static/images/20220326_161638.jpg" alt="" />
+      <img class="userImg" src="/static/images/man.png" alt="" />
     `;
     chatBox.appendChild(userMsgDiv);
 
@@ -100,7 +100,7 @@ submitBtn.addEventListener("click", (event) => {
     const loaderDiv = document.createElement("div");
     loaderDiv.classList.add("chat", "incoming");
     loaderDiv.innerHTML = `
-      <img class="botImg" src="/static/images/logo-figma.png" alt="" />
+    <img class="userImg" src="/static/images/chatbot-icon2 copy.png" alt=""width="35px" height="35px" />
       <div class="details">
         <p class="load" id="load_id">
           <span class="loader-bar-2"></span>
@@ -129,7 +129,7 @@ submitBtn.addEventListener("click", (event) => {
           <div class="details">
             <p class="user-msg">${data.msg}</p>
             <div class="responseImageContainer">
-              <img class="responseImg" src="/static/images/background6.jpg" alt="">
+              <img class="responseImg" src="static/images/chatbot-icon2.png" alt="">
             </div>
           </div>
         `;

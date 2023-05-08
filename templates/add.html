@@ -1,36 +1,36 @@
- 
-{% include "adminHeader.html" %}
 
-<link rel="stylesheet" href="/static/CSS/add.css">
-
-<div class="addContainer">
-  <form id="myForm">
-    <label for="">Choose the Keyword:</label>
-    <select name="" id="coreKey">
-      <option selected disabled>Choose from here</option>
-    </select>
-    <br><br>
-    
-    <label for="">Available Keywords with Answers:</label>
-    <div id="jsonList"></div>
-    <br>
-    
-    <label for="">New Name for SubKeyword:</label>
-    <input type="text" placeholder="keyword" id="subKey"/>
-    <br><br>
-    
-    <label for="">Enter the Answer for SubKeyword:</label>
-    <br>
-    <textarea name="" id="textArea" cols="40" rows="5"></textarea>
-    <br><br>
-    <p id="result"></p>
-    <button class="submitButton" type="submit" id="submitB">Submit</button>
-  </form>
+<head><link rel="stylesheet" href="/static/CSS/add.css"></head>
+<body>
+  {% include "adminHeader.html" %}
+<div class="main">
+  <div class="addContainer">
+    <form id="myForm" class="form">
+      <h2 class="form-title">Add Sub-Keywords</h2>
+      <div class="form-group">
+        <label for="coreKey" class="form-label">Choose the Keyword:</label>
+        <select name="coreKey" id="coreKey" class="form-control">
+          <option selected disabled>Choose from here</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="subKey" class="form-label">New Name for SubKeyword:</label>
+        <input type="text" placeholder="Enter SubKeyword" id="subKey" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <label for="textArea" class="form-label">Enter the Answer for SubKeyword:</label>
+        <textarea name="textArea" id="textArea" cols="40" rows="5" class="form-control"></textarea>
+      </div>
+      <p id="result"></p>
+      <button class="submit-button" type="submit" id="submitB">Submit</button>
+    </form>
+  </div>
 </div>
 
-  <script src="/static/javascript/nameFetching.js"></script>
-
-  </body>
+</body>
 
 
-</html>
+
+
+
+<script src="/static/javascript/nameFetching.js"></script>
+<!-- <script src="/static/javascript/adminNav.js"></script> -->

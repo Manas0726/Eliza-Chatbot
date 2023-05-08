@@ -1,304 +1,132 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
-	margin: 0;
-	padding: 0;
-	font-family: "EUCLID CIRCULAR B";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
-body {
-	overflow: hidden;
-	background-color: #afaeae;
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 260px;
+  background: #11101d;
+  padding: 15px;
+  z-index: 99;
 }
-
-ul {
-	list-style: none;
-}
-
-li {
-	text-align: center;
-	justify-content: center;
-}
-
-
 .logo {
-	color: white;
-	font-weight: 500;
-	font-size: 30px;
-	margin-left: 10px;
+  font-size: 25px;
+  padding: 0 15px;
 }
-
-.ulList {
-	list-style: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0;
-	padding: 0;
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
 }
-
-.liList {
-	position: relative;
+.menu-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+  overflow-y: hidden;
 }
-
-.liList a {
-	color: white;
-	text-decoration: none;
-	margin: 30px;
-	transition: ease 0.3s;
+.menu-content::-webkit-scrollbar {
+  display: none;
 }
-
-.liList a:hover {
-	color: aqua;
+.menu-items {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  transition: all 0.4s ease;
 }
-
-
-.navBar {
-	background-color: #1a1a1a;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	padding: 10px;
+.submenu-active .menu-items {
+  transform: translateX(-56%);
 }
-
-.containerImg {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 27px;
-	/* Set a height for the container */
-	margin-right: 10px;
+.menu-title {
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 20px;
 }
-
-.userImg {
-	width: 40px;
-	margin-right: 10px;
+.item a,
+.submenu-item {
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 12px;
 }
-
-button {
-	padding: 5px 10px;
-	margin-right: 10px;
-	border-radius: 20px;
-	border: none;
-	cursor: pointer;
-	transition: ease 0.3s;
+.item i {
+  font-size: 12px;
 }
-
-button:hover {
-	background-color: #afaeae;
+.item a:hover,
+.submenu-item:hover,
+.submenu .menu-title:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
-/* dropdown menu style */
-.dropdown-menu {
-	display: none;
-  }
-  .navBar .ulList .liList:hover .dropdown-menu {
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 100%;
-	background-color: #333;
-  }
-  .navBar .ulList li:hover .dropdown-menu ul {
-	display: block;
-	margin: 10px;
-  }
-  .navBar ul li:hover .dropdown-menu ul li {
-	width: 150px;
-	padding: 10px;
-  }
-  .dropdown-menu-1 {
-	display: none;
-  }
-  .dropdown-menu ul li:hover .dropdown-menu-1 {
-	display: block;
-	position: absolute;
-	width: 200px;
-	left: 175px;
-	top:50px;
-	background-color: #333;
-  }
-
-  .addContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 20px;
-  }
-
-  .dropdown-menu-2 {
-	display: none;
-  }
-  
-  .navBar .ulList .liList:nth-child(2):hover .dropdown-menu-2 {
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 100%;
-	background-color: #333;
-  }
-  
-  .navBar .ulList li:hover .dropdown-menu-2 ul {
-	display: block;
-	margin: 10px;
-  }
-  
-  .navBar .ulList li:hover .dropdown-menu-2 ul li {
-	width: 150px;
-	padding: 10px;
-	text-align: center;
-  }
-  
-  .dropdown-menu-li a {
-	color: #fff;
-  }
-  
-  .dropdown-menu-li a:hover {
-	color: #ccc;
-  }
-  
-  .dropdown-menu-li.active a {
-	color: #ccc;
-  }
-  
-  .dropdown-menu-ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-  }
-  
-  .dropdown-menu-ul li {
-	position: relative;
-  }
-  
-  .dropdown-menu-1 {
-	display: none;
-  }
-  
-  .dropdown-menu-ul li:hover .dropdown-menu-1 {
-	display: block;
-	position: absolute;
-	width: 200px;
-	left: 195px;
-	top: 50px;
-	background-color: #333;
-  }
-  
-  .Uldropdown-menu-1 {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-  }
-  
-  .Uldropdown-menu-1 li {
-	position: relative;
-  }
-  
-  .Uldropdown-menu-1 li a {
-	color: #fff;
-  }
-  
-  .Uldropdown-menu-1 li a:hover {
-	color: #ccc;
-  }
-  
-  .Uldropdown-menu-1 li.active a {
-	color: #ccc;
-  }
-  
-  
-
-
-
- 
-
-
-
-
-
-
-
-
-
-.submitButton {
-	margin-left: 204px;
+.submenu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-form {
-	max-width: 500px;
-	margin: 0 auto;
-	background-color: #fff;
-	padding: 30px;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.submenu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: calc(-100% - 26px);
+  height: calc(100% + 100vh);
+  background: #11101d;
+  display: none;
 }
-/* 
-h1 {
-	font-size: 24px;
-	margin-bottom: 20px;
-	text-align: center;
-	color: #333;
-}  */
- 
-label {
-	display: block;
-	margin-bottom: 10px;
-	font-size: 16px;
-	color: #333;
+.show-submenu ~ .submenu {
+  display: block;
 }
-
-select, input[type="text"], textarea {
-	width: 100%;
-	padding: 10px;
-	font-size: 16px;
-	border: none;
-	border-radius: 5px;
-	margin-bottom: 20px;
-	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+.submenu .menu-title {
+  border-radius: 12px;
+  cursor: pointer;
 }
-
-#jsonList {
-  padding: 10px 10px;
-  background-color: #d5e3e3;
-  border: solid 1px;
-  border-radius: 9px;
+.submenu .menu-title i {
+  margin-right: 10px;
 }
-select {
-	appearance: none;
-	-webkit-appearance: none;
-	background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-512.png') no-repeat right center;
-	background-size: 20px 20px;
+.navbar,
+.main {
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+  z-index: 1000;
 }
-
-textarea {
-	resize: vertical;
+.sidebar.close ~ .navbar,
+.sidebar.close ~ .main {
+  left: 0;
+  width: 100%;
 }
-
-.submitButton {
-	background-color: #4CAF50;
-	color: #fff;
-	font-size: 16px;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
+.navbar {
+  position: fixed;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 25px;
+  background: #4070f4;
+  cursor: pointer;
 }
-
-.submitButton:hover {
-	background-color: #3e8e41;
+.navbar #sidebar-close {
+  cursor: pointer;
+}
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 100;
+  background: #e7f2fd;
+}
+.main h1 {
+  color: #11101d;
+  font-size: 40px;
+  text-align: center;
+}
+.menu-items .item1 {
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
 }

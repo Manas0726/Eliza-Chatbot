@@ -3,7 +3,7 @@
     font-family: 'poppins' ,sans-serif;
 }
 body{
-    background-image: url("/static/images/background6.jpg");
+    background-image: url("/static/images/Desktop.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -82,8 +82,12 @@ i{
     margin-top: 10px;
 }
 .one{
-    color: rgb(85, 255, 0);
-    display: flex;
+    margin-top: 10px;
+    float: right;
+}
+
+.one a {
+    color: white;
 }
 label a{
     text-decoration: none;

@@ -1,0 +1,21 @@
+
+<head><link rel="stylesheet" href="/static/CSS/jsonList.css"></head>
+<!-- <head><link rel="stylesheet" href="/static/CSS/delete.css"></head> -->
+<body>
+  {% include "adminHeader.html" %}
+<div class="main">
+  <div class="addContainer">
+    <form id="myForm" class="form">
+      <h2 class="form-title">Display Data</h2>
+      <div class="form-group">
+        <label for="coreKey" class="form-label">Choose the Keyword:</label>
+        <select name="coreKey" id="coreKey" class="form-control">
+          <option selected disabled>Choose from here</option>
+        </select>
+      </div>
+      <p id="result"></p>
+    </form>
+  </div>
+</div>
+</body>
+<script src="/static/javascript/jsonList.js"></script>

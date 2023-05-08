@@ -28,7 +28,7 @@ function UserResponse() {
       <div class="details">
         <p class="user-msg">${buttonName}</p>
       </div>
-      <img class="userImg" src="/static/images/logo-figma.png" alt="" />
+      <img class="userImg" src="/static/images/man.png" alt="" />
     `;
     chatBox.appendChild(userMsgDiv);
 
@@ -42,7 +42,7 @@ function UserResponse() {
         botMsgDiv.classList.add("chat", "incoming1");
 
         var img = document.createElement("img");
-        img.setAttribute("src", "/static/images/logo-figma.png");
+        img.setAttribute("src", "/static/images/chatbot-icon2 copy.png");
         img.classList.add("userImg")
         img.style.width = "35px";
         img.style.height = "35px";
@@ -69,7 +69,7 @@ function UserResponse() {
             <div class="details">
            <p class="user-msg">${content}</p>
             </div>
-            <img class="userImg" src="/static/images/logo-figma.png" alt="" />
+            <img class="userImg" src="/static/images/man.png" alt="" width="35px" height="35px" />
               `;
             chatBox.appendChild(subButtonUserResponse);
 
@@ -85,7 +85,7 @@ function UserResponse() {
              var subButtonBotResponse = document.createElement("div");
              subButtonBotResponse.classList.add("chat", "incoming", "userImg");
              subButtonBotResponse.innerHTML = `
-             <img class="userImg" src="/static/images/logo-figma.png" alt="" />
+             <img class="userImg" src="/static/images/chatbot-icon2 copy.png" alt=""width="35px" height="35px" />
              <div class="details">
              <pre>  <p class="user-msg"> ${subbuttonresponse}</p></pre>
              </div>

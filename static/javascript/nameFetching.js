@@ -44,25 +44,42 @@ function inputFetch() {
   if (subKeyVal === "" || inputField === "" || textField === "") {
     alert("Choose options!");
   } else {
-    console.log(`CoreKey: ${subKeyVal}`);
-    console.log(`Input field: ${inputField}`);
-    console.log(`Text area: ${textField}`);
     fetch("/addElement/" + subKeyVal + "/" + inputField + "/" + textField + "/")
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
-          result.innerText = data.message;
-          console.log(data.message);
+          // result.innerText = data.message;
+          alert(data.message);
           document.getElementById("subKey").value = "";
           document.getElementById("textArea").value = "";
           location.reload();
         } else {
-          result.innerText = data.message;
-          console.log("already exists");
+          // result.innerText = data.message;
+          alert("already exists");
+          document.getElementById("subKey").value = "";
+          document.getElementById("textArea").value = "";
+          document.getElementById("coreKey").value;
+          location.reload();
         }
       });
   }
 }
 
+const myForm = document.querySelector('#myForm');
 
+myForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // prevent the form from being submitted
+
+  const coreKey = document.querySelector('#coreKey');
+  const subKey = document.querySelector('#subKey');
+  const textArea = document.querySelector('#textArea');
+
+  if (coreKey.value === '' && subKey.value === '' && textArea.value === '') {
+    alert('Please enter some values!');
+    
+  } else {
+    // Submit the form using fetch
+    inputFetch();
+  }
+});
 

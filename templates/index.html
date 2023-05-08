@@ -22,7 +22,7 @@
 <!-- <div class="back"> -->
 
 <nav class="nav" id="menu-bar">
-  <h1 class="logo">LOGO</h1>
+  <div class="logo"><img class="img" src="/static/images/chatbot-icon2.png" alt=""></div>
   <ul class="navUL">
     <li class="navLI"><a href="#">Credits</a></li>
     <li class="navLI"><a href="#">GitHub</a></li>
@@ -46,7 +46,7 @@
     </div>
     <div class="chat">
       <div class="chat__header">
-        <img src="/static/images/20220326_161638.jpg" alt="Profile Picture">
+        <img src="/static/images/chatbot-icon2 copy.png" alt="Profile Picture">
         <p>Eliza</p>
       </div>
       
@@ -171,7 +171,7 @@
 <section class="contactUs">
   <div class="wrapper">
     <header>Send us a Message</header>
-    <form id="contactForm" method="POST" > <!-- action="{% url 'send_email' %}" -->
+    <form id="contactForm" method="POST" >
       {% csrf_token %}
                 {% if messages %}
                 {% for message in messages %}

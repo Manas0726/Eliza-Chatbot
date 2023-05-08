@@ -363,6 +363,14 @@ def ansupdate(request,subKeyVal, inputField, updatedAnswer):
         json.dump(data, f)
     return JsonResponse({"message": "Answer updated successfully."})
 
+def jsonList(request):
+    with open('static/javascript/keyword.json') as f:
+        data = json.load(f)
+    context = {'data': data}
+    return render(request, 'jsonList.html', context)
+
+
+
 
 #---------------Formating---------------
 

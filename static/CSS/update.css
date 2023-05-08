@@ -1,140 +1,185 @@
-* {
-	margin: 0;
-	padding: 0;
-	font-family: Poppins, "sans-serif";
-}
 
-body {
-	overflow: hidden;
-	background-color: #afaeae;
-}
+  /* style the form container */
 
-ul {
-	list-style: none;
-}
-
-li {
-	text-align: center;
-	justify-content: center;
-}
-
-/* h1 {
-	color: white;
-	font-weight: 500;
-	font-size: 30px;
-	margin-left: 10px;
-} */
-
-.ulList {
-	list-style: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0;
-	padding: 0;
-}
-
-.liList {
-	position: relative;
-}
-
-.liList a {
-	color: white;
-	text-decoration: none;
-	margin: 30px;
-	transition: ease 0.3s;
-}
-
-.liList a:hover {
-	color: aqua;
-}
-
-
-.navBar {
-	background-color: #1a1a1a;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  
+  /* style the form */
+  .form {
+	width: 400px;
+	padding: 40px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* style the form title */
+  .form-title {
+	font-size: 24px;
+	margin-bottom: 20px;
+  }
+  
+  /* style the form group */
+  .form-group {
+	margin-bottom: 20px;
+  }
+  
+  /* style the form label */
+  .form-label {
+	display: block;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 5px;
+  }
+  
+  /* style the form control */
+  .form-control {
+	display: block;
 	width: 100%;
 	padding: 10px;
-}
-
-.containerImg {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 27px;
-	/* Set a height for the container */
-	margin-right: 10px;
-}
-
-.userImg {
-	width: 40px;
-	margin-right: 10px;
-}
-
-button {
-	padding: 5px 10px;
-	margin-right: 10px;
-	border-radius: 20px;
-	border: none;
-	cursor: pointer;
-	transition: ease 0.3s;
-}
-
-button:hover {
-	background-color: #afaeae;
-}
-/* dropdown menu style */
-.dropdown-menu {
-	display: none;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 16px;
+	line-height: 1.5;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
-  .navBar .ulList .liList:hover .dropdown-menu {
+  
+  /* style the form control when focused */
+  .form-control:focus {
+	border-color: #007bff;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+
+/* style the submit button */
+.submit-button {
 	display: block;
-	position: absolute;
-	left: 0;
-	top: 100%;
-	background-color: #333;
-  }
-  .navBar .ulList li:hover .dropdown-menu ul {
-	display: block;
-	margin: 10px;
-  }
-  .navBar ul li:hover .dropdown-menu ul li {
-	width: 150px;
+	width: 100%;
 	padding: 10px;
-  }
-  .dropdown-menu-1 {
-	display: none;
-  }
-  .dropdown-menu ul li:hover .dropdown-menu-1 {
+	border: none;
+	border-radius: 5px;
+	background-color: #007bff;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: background-color 0.15s ease-in-out;
+	}
+	
+	/* style the submit button when hovered */
+	.submit-button:hover {
+	background-color: #0069d9;
+	}
+	
+	/* style the result message */
+	.result-message {
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	color: #007bff;
+	}
+	
+	/* style the error message */
+	.error-message {
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	color: #dc3545;
+	}
+	
+	/* style the select element */
+	.select-element {
 	display: block;
-	position: absolute;
-	width: 200px;
-	left: 195px;
-	top:50px;
-	background-color: #333;
-  }
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 16px;
+	line-height: 1.5;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	}
+	
+	/* style the select element when focused */
+	.select-element:focus {
+	border-color: #007bff;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+	}
+	
+	/* style the label for select element */
+	.select-label {
+	display: block;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	}
+	
+	/* style the input element */
+	.input-element {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 16px;
+	line-height: 1.5;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	}
+	
+	/* style the input element when focused */
+	.input-element:focus {
+	border-color: #007bff;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+	}
+	
+	/* style the label for input element */
+	.input-label {
+	display: block;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	}
+	
+	/* style the textarea element */
+	.textarea-element {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 16px;
+	line-height: 1.5;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	}
+	
+	/* style the textarea element when focused */
+	.textarea-element:focus {
+	border-color: #007bff;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+	}
+	
 
+/* style the label for textarea element */
+.textarea-label {
+display: block;
+font-size: 16px;
+font-weight: 600;
+margin-bottom: 5px;
+}
 
-
-
-
-
-
-
-
-
-  /* update section */
-
-
-  .updateSection {
-	margin: 20px;
+.main {
+	position: relative;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-  }
-
-  .submitButton {
-	margin-left: 149px;
+	justify-content: center;
+	height: 100vh;
+	z-index: 100;
+	background: #e7f2fd;
   }

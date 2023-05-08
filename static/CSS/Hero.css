@@ -46,11 +46,20 @@ body {
 
 .logo {
   cursor: pointer;
+  display: flex;
+  height: 50px;
+  align-items: center;
   color: var(--white-color);
+}
+
+.img {
+  height: 70px;
+  width: 70px;
 }
 
 .navUL {
   display: flex;
+  align-items: center;
   gap: 30px;
 }
 
