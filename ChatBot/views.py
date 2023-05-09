@@ -42,7 +42,7 @@ def feedback(request):
             subject = ('hey this is feedback to you from '+uname)
             message = (umessage)
             sender_email = (uemail)
-            recipient_email = 'eliza2023.cm@gmail.com'
+            recipient_email = 'elizagpn@gmail.com'
 
             send_mail(
             subject,
@@ -191,7 +191,7 @@ def verify(request , auth_token):
 
 def send_mail_signup(email,token):
     subject='Your Account Needs to be verified'
-    message=f'paste the link to Verify Your Account http://127.0.0.1:8000/verify/{token}'
+    message=f'paste the link to Verify Your Account http://13.126.203.189:8000/verify/{token}'
     email_form = settings.EMAIL_HOST_USER
     recipient_list=[email]
     send_mail(subject , message, email_form , recipient_list)
